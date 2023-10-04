@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__main">
+
+                <a href="">
+                    <img src="./photos/logo.png" alt="">
+                </a>
+                <ul>
+                    <li><a href="">Решения</a></li>
+                    <li><a href="">Инструменты</a></li>
+                    <li><a href="">Кейсы</a></li>
+                    <li><a href="">О компании</a></li>
+                </ul>
+                <a class="header__call" href="tel:+74996861136">
+                    <img src="./photos/call.png" alt="">
+                    +7 499 686-11-36
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <a href="" class="sticky__call">
+        <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+            <path class="sticky__bord"
+                d="M29 -5.08233e-06C45.0163 -5.78242e-06 58 12.9837 58 29C58 45.0163 45.0163 58 29 58C12.9837 58 -5.67537e-07 45.0163 -1.26763e-06 29C-1.96772e-06 12.9837 12.9837 -4.38223e-06 29 -5.08233e-06Z"
+                fill="#C91717" />
+            <path class="sticky__back"
+                d="M29 -5.08233e-06C45.0163 -5.78242e-06 58 12.9837 58 29C58 45.0163 45.0163 58 29 58C12.9837 58 -5.67537e-07 45.0163 -1.26763e-06 29C-1.96772e-06 12.9837 12.9837 -4.38223e-06 29 -5.08233e-06Z"
+                fill="#C91717" />
+            <path class="sticky__front"
+                d="M38.3247 15.8503C39.8956 16.4066 41.1985 18.6145 41.579 20.3756C41.8355 21.5805 42.0401 23.1543 39.8438 28.4521C37.0363 35.2286 30.1503 39.5925 29.7035 39.9326C29.2568 40.2583 26.0573 42.6709 22.7483 42.6709C19.4394 42.6709 17.8281 40.9905 17.1363 40.3131C16.5685 39.7568 16.3091 38.8373 16.3091 37.9553C16.3091 37.67 16.3235 37.4134 16.335 37.1828C16.3638 36.5055 16.4042 36.1654 17.4736 35.7186C18.8139 35.1623 22.1229 33.8076 22.463 33.6461C22.8031 33.4819 23.2643 33.3176 23.711 33.5481C24.1722 33.7643 24.3769 33.9546 24.7689 34.2947C25.1609 34.6348 25.4607 34.9576 25.8815 35.2978C26.2475 35.6091 26.6396 35.9607 27.3169 35.5687C27.9799 35.1767 30.1907 33.822 31.9662 31.8274C34.2577 29.2534 34.9898 27.1665 35.3011 26.42C35.5317 25.8637 35.477 25.2008 35.0446 24.7943C34.4883 24.2784 33.5659 23.6414 32.658 22.9928C32.0066 22.5317 31.9259 21.9494 32.1564 21.3384C32.3726 20.7158 34.0012 17.4212 34.3384 16.7438C34.6785 16.0665 34.8399 15.6197 35.1253 15.4554C35.4107 15.294 36.751 15.294 38.3247 15.8503Z"
+                fill="white" />
+        </svg>
+    </a>
+
+    <div class="sticky__call2">
+        <div class="sticky__call2__main">
+
+            <div class="sticky__texts">
+                <a href="">VK</a>
+                <a href="">FB</a>
+                <a href="">YT</a>
+                <a href="">TW</a>
+            </div>
+
+            <div class="sticky__toopen__main">
+                <svg class="sticky__toopen" xmlns="http://www.w3.org/2000/svg" width="58" height="58"
+                    viewBox="0 0 58 58" fill="none">
+                    <path
+                        d="M29 -5.08233e-06C45.0163 -5.78242e-06 58 12.9837 58 29C58 45.0163 45.0163 58 29 58C12.9837 58 -5.67537e-07 45.0163 -1.26763e-06 29C-1.96772e-06 12.9837 12.9837 -4.38223e-06 29 -5.08233e-06Z"
+                        fill="#C91717" />
+                    <path
+                        d="M38.3243 15.8503C39.8952 16.4066 41.198 18.6145 41.5785 20.3756C41.835 21.5805 42.0397 23.1543 39.8433 28.4521C37.0358 35.2286 30.1498 39.5925 29.703 39.9326C29.2563 40.2583 26.0568 42.6709 22.7478 42.6709C19.4389 42.6709 17.8276 40.9905 17.1358 40.3131C16.568 39.7568 16.3086 38.8373 16.3086 37.9553C16.3086 37.67 16.323 37.4134 16.3345 37.1828C16.3634 36.5055 16.4037 36.1654 17.4731 35.7186C18.8134 35.1623 22.1224 33.8076 22.4625 33.6461C22.8026 33.4819 23.2638 33.3176 23.7106 33.5481C24.1717 33.7643 24.3764 33.9546 24.7684 34.2947C25.1604 34.6348 25.4602 34.9576 25.881 35.2978C26.2471 35.6091 26.6391 35.9607 27.3164 35.5687C27.9794 35.1767 30.1902 33.822 31.9657 31.8274C34.2572 29.2534 34.9893 27.1665 35.3006 26.42C35.5312 25.8637 35.4765 25.2008 35.0441 24.7943C34.4878 24.2784 33.5654 23.6414 32.6575 22.9928C32.0061 22.5317 31.9254 21.9494 32.156 21.3384C32.3721 20.7158 34.0007 17.4212 34.3379 16.7438C34.678 16.0665 34.8395 15.6197 35.1248 15.4554C35.4102 15.294 36.7505 15.294 38.3243 15.8503Z"
+                        fill="white" />
+                </svg>
+
+                <a class="sticky_open1 sticky__call1" href="">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                        <path class="sticky__back"
+                            d="M58 29C58 45.0163 45.0163 58 29 58C12.9837 58 0 45.0163 0 29C0 12.9837 12.9837 0 29 0C45.0163 0 58 12.9837 58 29Z"
+                            fill="#C91717" />
+                        <path class="sticky__front" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M28.0231 38.182H29.8781C29.8781 38.182 30.4384 38.1206 30.7245 37.813C30.9878 37.5307 30.9793 37.0004 30.9793 37.0004C30.9793 37.0004 30.9431 34.518 32.0983 34.1525C33.2371 33.7924 34.6994 36.5517 36.2493 37.6126C37.4214 38.4156 38.312 38.2395 38.312 38.2395L42.4563 38.182C42.4563 38.182 44.6243 38.0488 43.5963 36.3487C43.5121 36.2097 42.9977 35.0912 40.515 32.7928C37.9164 30.3873 38.2644 30.7764 41.3946 26.6154C43.301 24.0813 44.0631 22.5343 43.8251 21.8716C43.598 21.2405 42.1959 21.4073 42.1959 21.4073L37.5297 21.4363C37.5297 21.4363 37.1838 21.3893 36.9272 21.5422C36.6765 21.6922 36.5152 22.0418 36.5152 22.0418C36.5152 22.0418 35.7766 24.0028 34.7917 25.6704C32.7138 29.1894 31.883 29.3751 31.5435 29.1566C30.7535 28.6474 30.9507 27.1108 30.9507 26.0192C30.9507 22.609 31.4693 21.1872 29.9409 20.8191C29.4336 20.6968 29.0603 20.6162 27.7632 20.6031C26.0982 20.5859 24.689 20.6082 23.891 20.9981C23.3602 21.2573 22.9507 21.8351 23.2001 21.8683C23.5085 21.9095 24.207 22.0561 24.5773 22.559C25.0555 23.2078 25.0387 24.665 25.0387 24.665C25.0387 24.665 25.3133 28.6793 24.397 29.178C23.768 29.5201 22.9052 28.8217 21.0528 25.6293C20.1036 23.9939 19.387 22.1863 19.387 22.1863C19.387 22.1863 19.2488 21.8485 19.0023 21.6679C18.7032 21.4489 18.2853 21.3792 18.2853 21.3792L13.8512 21.4082C13.8512 21.4082 13.1855 21.4267 12.9412 21.7153C12.7238 21.9721 12.9239 22.5032 12.9239 22.5032C12.9239 22.5032 16.3954 30.6033 20.326 34.6853C23.9302 38.4278 28.0231 38.182 28.0231 38.182Z"
+                            fill="white" />
+                    </svg>
+                </a>
+                <a class="sticky_open2 sticky__call1 sticky__call1_1" href="">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                        <path class="sticky__back"
+                            d="M58 29C58 45.0163 45.0163 58 29 58C12.9837 58 0 45.0163 0 29C0 12.9837 12.9837 0 29 0C45.0163 0 58 12.9837 58 29Z"
+                            fill="#C91717" />
+                        <path class="sticky__front"
+                            d="M31.9434 21.4758H35.3129V16.5864H31.3519V16.6041C26.5525 16.771 25.5688 19.4211 25.4821 22.2045H25.4722V24.646H22.2041V29.4341H25.4722V42.269H30.3975V29.4341H34.4321L35.2115 24.646H30.3991V23.1709C30.3991 22.2302 31.0363 21.4758 31.9434 21.4758Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="account__mother">
+        <div class="acount_main">
+            <h3>Войти в личный кабинет</h3>
+            <p><b> Введите свои данные</b> для входа в личный кабинет</p>
+
+            <form action="">
+                <input type="text" placeholder="Ваше имя*" class="form__input" required>
+                <input type="text" placeholder="Телефон*" class="form__input" required>
+                <input type="text" placeholder="Email" class="form__input">
+                <button>Войти</button>
+            </form>
+            <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, 
+                в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», 
+                на условиях и для целей, определенных в Согласии на обработку персональных данных.</span>
+        </div>
+
+        <div class="acount_OK">
+            <img src="./photos/ok.png" alt="">
+            <h3>Спасибо!</h3>
+            <p>Ваши данные успешно отправлены</p>
+        </div>
+    </div>
+
+
+    <div class="confidation__mother">
+        <div class="confidation__main">
+            <h3>Политика конфиденциальности</h3>
+            <p class="confidation__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit sint, pariatur assumenda laborum incidunt illum porro? Adipisci quae, dicta quia dolores voluptatibus et dolor? Magnam, iure magni eaque rem omnis cumque expedita exercitationem, quae, facilis repellat molestiae odit perferendis quisquam ipsa nulla alias soluta necessitatibus eius. Facere blanditiis quisquam ducimus assumenda sunt eos adipisci. Soluta magni deserunt expedita culpa tempore. Sequi atque officiis assumenda tenetur expedita deleniti, unde consectetur, explicabo ea ratione tempore dolores non eaque quod omnis mollitia temporibus cumque repudiandae! Explicabo officia eligendi commodi voluptate eius, quae voluptatibus, autem, voluptates aliquid molestias sunt? Voluptatem perferendis perspiciatis ex non provident error unde delectus minima voluptate odio enim temporibus tempore iste, maxime repellat deserunt, eos inventore, corrupti vitae magni consequatur recusandae est? Dolores qui veniam ipsum quod aliquid commodi possimus nulla fugiat eaque. Animi alias et expedita unde dolorem quia ipsam voluptates officia est, architecto eligendi dicta error nam, molestiae reiciendis suscipit repellat harum pariatur modi ad quibusdam quam veniam. Velit in officia blanditiis deserunt, soluta dolores beatae eos error cumque, facere atque dicta dignissimos. Saepe ducimus aut aliquid facilis. Officia dicta repellat consectetur ex non est deserunt quae recusandae ipsa dolor error sunt reiciendis, harum nemo nam alias mollitia facilis fuga unde sequi perferendis consequuntur odio. Quos sit soluta explicabo repellendus dolore mollitia accusamus suscipit voluptate voluptatem, est expedita optio illum temporibus laborum ad placeat, quod dignissimos, ducimus atque eos eaque. Eius, eum hic inventore ad illo ut? Cum repudiandae perspiciatis odio ipsum dignissimos eos tempore, culpa doloremque assumenda necessitatibus eius non, minima at commodi magni quam laboriosam debitis ipsam suscipit harum architecto iure vel. Quisquam libero, quod perspiciatis eveniet fugit iure dolores, sunt officia reprehenderit, ullam veniam. Maxime qui suscipit obcaecati amet aut reprehenderit quasi explicabo quibusdam at soluta atque dolorum velit placeat voluptatem fuga sed est eveniet debitis, inventore ipsum. Necessitatibus in qui optio ipsa consectetur ad unde dolor autem alias. Nesciunt iusto excepturi cumque ipsa quae laboriosam esse, recusandae distinctio. Quae minus iure odit. Itaque praesentium doloremque voluptas veniam ipsa fugiat blanditiis rerum ratione ipsum. Quaerat ab eius, repellendus voluptatem cum, quod cumque itaque quam architecto repudiandae corrupti minus in dolores, magnam molestias nam incidunt dolorem officia hic at ullam. Eaque, nobis ipsum! Suscipit, modi nam reiciendis perferendis veniam esse, facere vitae velit maxime temporibus error? Suscipit aperiam consequuntur sunt reprehenderit, hic dolorem quas eaque doloribus incidunt? Nobis iusto aliquam repudiandae! Totam illo eligendi nobis quas!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit sint, pariatur assumenda laborum incidunt illum porro? Adipisci quae, dicta quia dolores voluptatibus et dolor? Magnam, iure magni eaque rem omnis cumque expedita exercitationem, quae, facilis repellat molestiae odit perferendis quisquam ipsa nulla alias soluta necessitatibus eius. Facere blanditiis quisquam ducimus assumenda sunt eos adipisci. Soluta magni deserunt expedita culpa tempore. Sequi atque officiis assumenda tenetur expedita deleniti, unde consectetur, explicabo ea ratione tempore dolores non eaque quod omnis mollitia temporibus cumque repudiandae! Explicabo officia eligendi commodi voluptate eius, quae voluptatibus, autem, voluptates aliquid molestias sunt? Voluptatem perferendis perspiciatis ex non provident error unde delectus minima voluptate odio enim temporibus tempore iste, maxime repellat deserunt, eos inventore, corrupti vitae magni consequatur recusandae est? Dolores qui veniam ipsum quod aliquid commodi possimus nulla fugiat eaque. Animi alias et expedita unde dolorem quia ipsam voluptates officia est, architecto eligendi dicta error nam, molestiae reiciendis suscipit repellat harum pariatur modi ad quibusdam quam veniam. Velit in officia blanditiis deserunt, soluta dolores beatae eos error cumque, facere atque dicta dignissimos. Saepe ducimus aut aliquid facilis. Officia dicta repellat consectetur ex non est deserunt quae recusandae ipsa dolor error sunt reiciendis, harum nemo nam alias mollitia facilis fuga unde sequi perferendis consequuntur odio. Quos sit soluta explicabo repellendus dolore mollitia accusamus suscipit voluptate voluptatem, est expedita optio illum temporibus laborum ad placeat, quod dignissimos, ducimus atque eos eaque. Eius, eum hic inventore ad illo ut? Cum repudiandae perspiciatis odio ipsum dignissimos eos tempore, culpa doloremque assumenda necessitatibus eius non, minima at commodi magni quam laboriosam debitis ipsam suscipit harum architecto iure vel. Quisquam libero, quod perspiciatis eveniet fugit iure dolores, sunt officia reprehenderit, ullam veniam. Maxime qui suscipit obcaecati amet aut reprehenderit quasi explicabo quibusdam at soluta atque dolorum velit placeat voluptatem fuga sed est eveniet debitis, inventore ipsum. Necessitatibus in qui optio ipsa consectetur ad unde dolor autem alias. Nesciunt iusto excepturi cumque ipsa quae laboriosam esse, recusandae distinctio. Quae minus iure odit. Itaque praesentium doloremque voluptas veniam ipsa fugiat blanditiis rerum ratione ipsum. Quaerat ab eius, repellendus voluptatem cum, quod cumque itaque quam architecto repudiandae corrupti minus in dolores, magnam molestias nam incidunt dolorem officia hic at ullam. Eaque, nobis ipsum! Suscipit, modi nam reiciendis perferendis veniam esse, facere vitae velit maxime temporibus error? Suscipit aperiam consequuntur sunt reprehenderit, hic dolorem quas eaque doloribus incidunt? Nobis iusto aliquam repudiandae! Totam illo eligendi nobis quas!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit sint, pariatur assumenda laborum incidunt illum porro? Adipisci quae, dicta quia dolores voluptatibus et dolor? Magnam, iure magni eaque rem omnis cumque expedita exercitationem, quae, facilis repellat molestiae odit perferendis quisquam ipsa nulla alias soluta necessitatibus eius. Facere blanditiis quisquam ducimus assumenda sunt eos adipisci. Soluta magni deserunt expedita culpa tempore. Sequi atque officiis assumenda tenetur expedita deleniti, unde consectetur, explicabo ea ratione tempore dolores non eaque quod omnis mollitia temporibus cumque repudiandae! Explicabo officia eligendi commodi voluptate eius, quae voluptatibus, autem, voluptates aliquid molestias sunt? Voluptatem perferendis perspiciatis ex non provident error unde delectus minima voluptate odio enim temporibus tempore iste, maxime repellat deserunt, eos inventore, corrupti vitae magni consequatur recusandae est? Dolores qui veniam ipsum quod aliquid commodi possimus nulla fugiat eaque. Animi alias et expedita unde dolorem quia ipsam voluptates officia est, architecto eligendi dicta error nam, molestiae reiciendis suscipit repellat harum pariatur modi ad quibusdam quam veniam. Velit in officia blanditiis deserunt, soluta dolores beatae eos error cumque, facere atque dicta dignissimos. Saepe ducimus aut aliquid facilis. Officia dicta repellat consectetur ex non est deserunt quae recusandae ipsa dolor error sunt reiciendis, harum nemo nam alias mollitia facilis fuga unde sequi perferendis consequuntur odio. Quos sit soluta explicabo repellendus dolore mollitia accusamus suscipit voluptate voluptatem, est expedita optio illum temporibus laborum ad placeat, quod dignissimos, ducimus atque eos eaque. Eius, eum hic inventore ad illo ut? Cum repudiandae perspiciatis odio ipsum dignissimos eos tempore, culpa doloremque assumenda necessitatibus eius non, minima at commodi magni quam laboriosam debitis ipsam suscipit harum architecto iure vel. Quisquam libero, quod perspiciatis eveniet fugit iure dolores, sunt officia reprehenderit, ullam veniam. Maxime qui suscipit obcaecati amet aut reprehenderit quasi explicabo quibusdam at soluta atque dolorum velit placeat voluptatem fuga sed est eveniet debitis, inventore ipsum. Necessitatibus in qui optio ipsa consectetur ad unde dolor autem alias. Nesciunt iusto excepturi cumque ipsa quae laboriosam esse, recusandae distinctio. Quae minus iure odit. Itaque praesentium doloremque voluptas veniam ipsa fugiat blanditiis rerum ratione ipsum. Quaerat ab eius, repellendus voluptatem cum, quod cumque itaque quam architecto repudiandae corrupti minus in dolores, magnam molestias nam incidunt dolorem officia hic at ullam. Eaque, nobis ipsum! Suscipit, modi nam reiciendis perferendis veniam esse, facere vitae velit maxime temporibus error? Suscipit aperiam consequuntur sunt reprehenderit, hic dolorem quas eaque doloribus incidunt? Nobis iusto aliquam repudiandae! Totam illo eligendi nobis quas!
+            </p>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="swiper1_main">
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide swiper1_slide">
+
+                            <div class="swiper__slideText">
+
+                                <h1>Качество <br> и эффективная работа вашего персонала</h1>
+                                <p>Современные технологии выявления, оценки и развития персонала</p>
+
+                                <button class="loginToCabinet">Войти в личный кабинет</button>
+                                <div class="slider__icons">
+                                    <div>
+                                        <img src="./photos/slider1_icon1.png" alt="">
+                                        <p>Оценка персонала организации</p>
+                                    </div>
+                                    <div>
+                                        <img src="./photos/slider1_icon2.png" alt="">
+                                        <p>Разработка диагностических документов</p>
+                                    </div>
+                                    <div>
+                                        <img src="./photos/slider1_icon3.png" alt="">
+                                        <p>Консалтинг и оптимизация бизнес-процессов</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide swiper1_slide">
+
+                            <div class="swiper__slideText swiper__slideText2">
+
+                                <h1>Эффективная <br> оценка персонала организации</h1>
+                                <p>Современные технологии выявления, оценки и развития персонала</p>
+
+                                <button class="loginToCabinet">Войти в личный кабинет</button>
+                                <div class="slider__icons">
+                                    <div>
+                                        <img src="./photos/slider1_icon4.png" alt="">
+                                        <p class="swiper__slideText2__text1">Отберём 5 % «тех самых» кандидатовещё до
+                                            собеседования
+                                            с помощью онлайн-тестов.</p>
+                                    </div>
+                                    <div>
+                                        <img src="./photos/slider1_icon2.png" alt="">
+                                        <p>Повысим эффективность ваших сотрудников в 2 раза.</p>
+                                    </div>
+                                    <div>
+                                        <img src="./photos/slider1_icon3.png" alt="">
+                                        <p>Определим и покажем слабые места и проблемы вашего коллектива.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide swiper1_slide">
+
+                            <div class="swiper__slideText swiper__slideText4">
+                                <h1>Разработка диагностических инструментов и тестов
+                                    <br>для персонала
+                                </h1>
+
+                                <p>Современные технологии выявления, оценки и развития персонала</p>
+
+                                <button class="loginToCabinet">Войти в личный кабинет</button>
+                                <div class="slider__icons">
+                                    <div>
+                                        <img src="./photos/slider1_icon1.png" alt="">
+                                        <p>Оценка персонала организации</p>
+                                    </div>
+                                    <div>
+                                        <img src="./photos/slider1_icon2.png" alt="">
+                                        <p>Разработка диагностических документов</p>
+                                    </div>
+                                    <div>
+                                        <img src="./photos/slider1_icon3.png" alt="">
+                                        <p>Консалтинг и оптимизация бизнес-процессов</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide swiper1_slide">
+
+                            <div class="swiper__slideText swiper__slideText3">
+                                <h1>Комплексный <br>консалдинг организации</h1>
+
+                                <p>Современные технологии выявления, оценки и развития персонала</p>
+
+                                <button class="loginToCabinet">Войти в личный кабинет</button>
+                                <div class="slider__icons">
+                                    <div>
+                                        <img src="./photos/slider1_icon1.png" alt="">
+                                        <p>Оценка персонала организации</p>
+                                    </div>
+                                    <div>
+                                        <img src="./photos/slider1_icon2.png" alt="">
+                                        <p>Разработка диагностических документов</p>
+                                    </div>
+                                    <div>
+                                        <img src="./photos/slider1_icon3.png" alt="">
+                                        <p>Консалтинг и оптимизация бизнес-процессов</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- If we need navigation buttons -->
+
+                    </div>
+                    <div class="swiperNavigation1">
+                        <div class="swiper-button-next">
+                            <img src="./photos/arrow2.png" alt="">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev">
+                            <img src="./photos/arrow1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="whatWeSolve">
+        <div class="container">
+            <h2>Какие задачи мы решаем</h2>
+            <div class="whatWeSolve__rightText">разрабатываем инмтрументы <br>
+                формируем отчеты <br>
+                обеспечиваем интеграцию <br>
+                адаптируем новых сотрудников</div>
+            <div class="whatWeSolve__text">
+                <div class="whatWeSolve_line"></div>
+                <p>Диагностический онлайн комплекс по объему и качеству данных может заменить очный ассессмент. Получаем
+                    данные сразу о комплексе профессиональных качеств каждого сотрудника и команды в целом. Что помогает
+                    нам повысить продуктивность рабочего взаимодействия за счет понимания приоритетов, ресурсов каждого
+                    сотрудника, прогнозирования уровня работоспособности, проблемных зон в рабочих командах. А также
+                    позволяет:</p>
+            </div>
+            <div class="swiper2Main">
+
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper2__elementHead">
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo1.png" alt="">
+                                        </div>
+                                        <h3> Закрываем широкий спектр кадровых задач</h3>
+                                    </div>
+                                    <p>формирование кадрового резерва, проектных команд, системы обучения,
+                                        реструктуризация, оптимизация кадрового состава </p>
+                                </div>
+
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo2.png" alt="">
+                                        </div>
+                                        <h3 class="h3_swiper"> Организовываем командное взаимодействие</h3>
+                                    </div>
+                                    <p>в условиях гибридной работы повышение развития у сотрудников soft skills,
+                                        систематизация и оптимизация рабочих и учебных процессов</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2__elementHead">
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo3.png" alt="">
+                                        </div>
+                                        <h3>Разрабатываем инструменты</h3>
+                                    </div>
+                                    <p>и процедуры оценки, кастомизировать отчѐты под задачи и бренд заказчика</p>
+                                </div>
+
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo4.png" alt="">
+                                        </div>
+                                        <h3> Адаптируем новых сотрудников</h3>
+                                    </div>
+                                    <p>удержание компетентного резерва, быстрая подготовка института наставничества;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2__elementHead">
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo5.png" alt="">
+                                        </div>
+                                        <h3>Автоматически формируем отчеты</h3>
+                                    </div>
+                                    <p>сразу после прохождения тестирования,
+                                        а также дополнительная экспертиза
+                                        от опытных консультантов</p>
+                                </div>
+
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo6.png" alt="">
+                                        </div>
+                                        <h3> Обеспечиваем интеграцию </h3>
+                                    </div>
+                                    <p>в корпоративные инструменты заказчика, в том числе размещения на серверных
+                                        мощностях заказчика</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2__elementHead">
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo7.png" alt="">
+                                        </div>
+                                        <h3 class="h3_swiper"> Формирование внутреннего кадрового резерва</h3>
+                                    </div>
+                                    <p>для быстрого и мало затратного закрытия вакансий </p>
+                                </div>
+
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo8.png" alt="">
+                                        </div>
+                                        <h3> Профилактика </h3>
+                                    </div>
+                                    <p>профессионального выгорания, конфликтных
+                                        и непродуктивных взаимоотношений в рабочем коллективе</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper2__elementHead">
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo9.png" alt="">
+                                        </div>
+                                        <h3> Прогнозирование</h3>
+                                    </div>
+                                    <p>соответствия возможностей кадров их рабочим задачам и целям компании, перспектив
+                                        карьерного развития</p>
+                                </div>
+
+                                <div class="swiper2__element">
+                                    <div>
+                                        <div class="swiper2__element_logo">
+                                            <img src="./photos/weDo10.png" alt="">
+                                        </div>
+                                        <h3> Оптимизация
+                                            процессов</h3>
+                                    </div>
+                                    <p>реструктуризации, оптимизации <br>
+                                        кадрового состава</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiperBut2 swiper-button-prev1">
+                    <img src="./photos/arrow3.png" alt="">
+                </div>
+                <div class="swiperBut2 swiperBut2_2 swiper-button-next1">
+                    <img src="./photos/arrow4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="toolsandReviews">
+        <div class="container">
+            <div class="tools__main">
+                <div>
+                    <h2>Инструменты оценки</h2>
+
+                    <div class="tools__mother">
+                        <div class="tool__element tool__element-active">
+                            <p>«МСА–Business» и «Team-Model»</p>
+                        </div>
+                        <div class="tool__element">
+                            <p>«Burnout Repertory Grid»</p>
+                        </div>
+
+                        <div class="tool__element">
+                            <p>«ProActiv-Style»</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool__element_open  tool__element_open-active">
+                    <div class="whatWeSolve__text">
+                        <div class="whatWeSolve_line"></div>
+                        <p><b> «МСА–Business» и «Team-Model» </b> - комплекс методик на основе бизнес-социометрии для
+                            оценки эффективности совместной деятельности и взаимоотношений в рабочих командах,
+                            ценностных профилей каждого сотрудника и подразделения в целом, включенности в рабочий
+                            процесс и видов деятельности, которые наиболее мотивируют сотрудников.</p>
+                    </div>
+
+                    <h3>«МСА–Business» и «Team-Model» позволяют:</h3>
+
+                    <div class="tool__element_open__allow">
+                        <div class="tool__element_open__allow-element">
+                            <p>/01</p>
+
+                            <span><b> Оценить продуктивность</b> рабочего взаимодействия и зоны развития
+                                в рабочих группах;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/02</p>
+
+                            <span><b>Выявить проблемные области </b>и скрытые конфликты внутри подразделений;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/03</p>
+
+                            <span><b>Построить рейтинги в коллективе </b>
+                                по уровню авторитета, включенности
+                                в работу, эмоциональному влиянию (позитивному или негативному) и т.д.;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/04</p>
+
+                            <span><b>Выявить ценностную модель </b>коллектива и индивидуальный профиль каждого
+                                сотрудника, его функциональные предпочтения
+                                в работе;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/05</p>
+
+                            <span><b>Определить нереализованный потенциал</b> сотрудников для горизонтальной и
+                                вертикальной</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/06</p>
+
+                            <span><b> Проанализировать успешность интеграции </b> и адаптации новых сотрудников в
+                                подразделении.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool__element_open tool__element_open1">
+                    <div class="whatWeSolve__text">
+                        <div class="whatWeSolve_line"></div>
+                        <p><b> «Burnout Repertory Grid» </b> - проективная методика оценки
+                            выраженности и причин возникновения профессионального
+                            выгорания у сотрудников, понимание уровня работоспособности,
+                            готовности к высокой нагрузке и ответственным проектам
+                            сотрудников, вероятность деструктивных проявлений в поведении.</p>
+                    </div>
+
+                    <h3>«Burnout Repertory Grid» определяет:</h3>
+
+                    <div class="tool__element_open__allow">
+                        <div class="tool__element_open__allow-element">
+                            <p>/01</p>
+
+                            <span>Наличие и <b> уровень профессионального выгорания, </b> запас работоспособности у
+                                кандидатов и сотрудников, возможности и настрой на продуктивное выполнение
+                                работы;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/02</p>
+
+                            <span><b>Факторы, влияющие на снижение продуктивности:</b>эмоциональное перенапряжение,
+                                избыток коммуникаций, непосредственно профессиональная деятельность;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/03</p>
+
+                            <span> Сотрудников, которые потенциально могут войти
+                                в <b> «группу риска»</b>
+                                (низкая лояльность, вероятность смены работодателя и возможные деструктивные проявления
+                                в поведении сотрудников);</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/04</p>
+
+                            <span> Направления профилактики и<b>снижения уровня профессионального выгорания.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool__element_open tool__element_open1">
+                    <div class="whatWeSolve__text">
+                        <div class="whatWeSolve_line"></div>
+                        <p><b> «ProActiv-Style» </b> - ипсативный опросник выявляет уникальный
+                            набор качеств человека, характеризующих стиль его деятельности,
+                            командную роль, факторы мотивации, отношение к изменениям и
+                            наиболее подходящий способ обучения.</p>
+                    </div>
+
+                    <h3>«ProActiv-Style» помогает:</h3>
+
+                    <div class="tool__element_open__allow">
+                        <div class="tool__element_open__allow-element">
+                            <p>/01</p>
+
+                            <span><b> Определить стиль рабочего поведения</b> сотрудника на основе сочетания его
+                                личностно-профессиональных качеств, таких как:стремление к лидерству, контролю,
+                                проявлению такта, уверенности в себе, общительности и др;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/02</p>
+
+                            <span><b>Выявить </b>что в большей степени мотивирует сотрудника:
+                                <br> <b> ✓</b> независимость,
+                                <br> <b> ✓</b> статус,
+                                <br> <b> ✓</b> достижения в работе,
+                                <br><b> ✓</b> эмоции и впечатления от работы;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/03</p>
+
+                            <span><b> Получить информацию</b>
+                                о ресурсах и потенциале специалиста относительно требований его профессиональной
+                                деятельности и задач компании;</span>
+                        </div>
+                        <div class="tool__element_open__allow-element">
+                            <p>/04</p>
+
+                            <span>Разработать <b>индивидуальную стратегию развития </b> для каждого сотрудника с учетом
+                                особенностей личности.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="form__toRequest">
+        <div class="container">
+            <div class="form__toRequest__main">
+
+                <h3>Хотите узнать больше <br>
+                    о секретах продуктивной работы?</h3>
+                <p><b> Оставьте заявку</b> и мы свяжемся с вами в ближайшее время</p>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя*" required class="form__input">
+                    <input type="text" placeholder="Телефон*" required class="form__input">
+                    <input type="email" placeholder="Email" class="form__input">
+                    <button>Отправить заявку</button>
+                </form>
+                <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
+                    соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и
+                    для целей, определенных в Согласии на обработку персональных данных.</span>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="cases">
+        <div class="container">
+            <h2>Кейсы</h2>
+
+            <div class="cases__button_main">
+                <div class="cases__button cases__button-active">
+                    <p>Интернет-компания</p>
+                </div>
+                <div class="cases__button">
+                    <p>Государственно общественная организация</p>
+                </div>
+                <div class="cases__button">
+                    <p>Коммерческий банк</p>
+                </div>
+            </div>
+
+            <div class="cases__element_main cases__element_main-active">
+                <div class="cases_element">
+                    <h3>Создание системы внутрикорпоративного развития сотрудников</h3>
+
+
+                    <div class="cases_texts_main">
+                        <div>
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/list1.png" alt="">
+                                    <h3>Задача заказчика:</h3>
+                                </div>
+                                <p>создать внутрикорпоративный онлайн-сервис для самостоятельной диагностики
+                                    сотрудников, выявления потенциальных возможностей и саморазвития.</p>
+                            </div>
+
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/list2.png" alt="">
+                                    <h3>Реализовано:</h3>
+                                </div>
+                                <p><b> •интеграция</b> платформы Innometrica с корпоративной платформой заказчика;</p>
+                                <p><b> • адаптация и кастомизация</b> автоматически формируемых отчетов с развивающей
+                                    обратной связью и рекомендациями для сотрудников данной компании. </p>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/results_logo.png" alt="">
+                                    <h3>Результаты:</h3>
+                                </div>
+
+                                <ul>
+                                    <li> <b> предоставлена информация </b>об индивидуальных особенностях сотрудников в
+                                        соответствии с профилем должности для руководителя;</li>
+                                    <li> <b> подготовлены персональные отчеты </b>по итогам оценки с рекомендациями по
+                                        развитию и обучению для сотрудников;</li>
+                                    <li> HR специалистами <b> получены ключевые данные </b> по результатам тестирования,
+                                        с помощью которых выявлены сотрудники, имеющие потенциал и стремление к
+                                        вертикальной и горизонтальной ротации.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div class="cases__lastDivs">
+                                <!-- <img src="./photos/setting1.png" alt=""> -->
+                                <p>Инструменты:</p>
+
+                                <span>Методы оценки профессионально-деловых и личностных качеств персонала «Pro-Self» и
+                                    «ProActiv-Style».</span>
+                            </div>
+
+                            <div class="cases__lastDivs cases__lastDivs1">
+                                <!-- <img src="./photos/setting2.png" alt=""> -->
+                                <p>Участники тестирования:</p>
+
+                                <span><b> 600 человек</b>– сотрудники компании.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cases__element_main ">
+                <div class="cases_element">
+                    <h3>Внедрение изменений <br>
+                        в организации</h3>
+
+
+                    <div class="cases_texts_main">
+                        <div>
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/list1.png" alt="">
+                                    <h3>Задача заказчика:</h3>
+                                </div>
+                                <p>Для повышения эффективности деятельности подразделений было принято решение ввести
+                                    изменения в принципы работы организации. Поставлена задача выявить лидера изменений
+                                    (новатор) и сформировать команду для внедрения
+                                    инноваций.</p>
+                            </div>
+
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/list2.png" alt="">
+                                    <h3>Реализовано:</h3>
+                                </div>
+                                <p>Оценка внутригрупповых коммуникаций, функциональных предпочтений и
+                                    командных ценностей сотрудников организации. </p>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/results_logo.png" alt="">
+                                    <h3>Результаты:</h3>
+                                </div>
+
+                                <ul>
+                                    <li> <b> выявлен лидер изменений (новатор) </b> и даны рекомендации по формированию
+                                        рабочей команды для внедрения инноваций;</li>
+                                    <li> <b>выявлены особенности внутригруппового взаимодействия </b>и «серые
+                                        кардиналы», которые могут препятствовать внедрению инноваций;</li>
+                                    <li><b>определены сотрудники, </b> склонные к новациям и обладающие необходимым
+                                        потенциалом для их продвижения;</li>
+                                    <li><b> даны рекомендации </b> по изменению психологической атмосферы в коллективе
+                                        на более благоприятную</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div class="cases__lastDivs">
+                                <!-- <img src="./photos/setting1.png" alt=""> -->
+                                <p>Инструменты:</p>
+
+                                <span>Методики оценки структурных подразделений и проектных команд «МСА–Business» и
+                                    «Team-Model».</span>
+                            </div>
+
+                            <div class="cases__lastDivs cases__lastDivs1">
+                                <!-- <img src="./photos/setting2.png" alt=""> -->
+                                <p>Участники тестирования:</p>
+
+                                <span><b>300 человек</b> - сотрудники компании.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cases__element_main ">
+                <div class="cases_element">
+                    <h3>Оценка потенциала и уровня
+                        работоспособности</h3>
+
+
+                    <div class="cases_texts_main">
+                        <div>
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/list1.png" alt="">
+                                    <h3>Задача заказчика:</h3>
+                                </div>
+                                <p>Банку предстояло включиться в ряд серьезных проектов. Необходимо было оценить
+                                    актуальное состояние руководителей среднего и высшего звена,
+                                    их потенциал и уровень работоспособности.</p>
+                            </div>
+
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/list2.png" alt="">
+                                    <h3>Реализовано:</h3>
+                                </div>
+                                <p>Оценка уровня профессионального выгорания, ключевых характеристик, функциональных
+                                    особенностей руководящего состава и продуктивности деловых взаимоотношений. </p>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="cases_texts-el">
+                                <div class="cases_texts_head">
+                                    <img src="./photos/results_logo.png" alt="">
+                                    <h3>Результаты:</h3>
+                                </div>
+
+                                <ul>
+                                    <li> <b>получены данные </b> о наличии и степени профессионального выгорания, уровне
+                                        работоспособности, потенциальных возможностях руководящего состава;</li>
+                                    <li> <b>среди участников опроса выделены: </b></li>
+                                </ul>
+                                <p class="cases_texts-el-text">✓ наиболее активные, авторитетные и вовлеченные
+                                    сотрудники;
+                                    <br> ✓ сотрудники, со сниженной работоспособностью;
+                                    <br> ✓ сотрудники, находящиеся в группе риска (риск увольнения, срывы, утечка
+                                    информации и т.д.) и аутсайдеры (низкие показатели по всем позициям);
+                                    <br> ✓ определены зоны наибольшей эффективности каждого сотрудника, его ключевые
+                                    преимущества;
+                                </p>
+                                <ul>
+
+                                    <li><b> даны рекомендации </b> по каждому сотруднику</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div class="cases__lastDivs">
+                                <!-- <img src="./photos/setting1.png" alt=""> -->
+                                <p>Инструменты:</p>
+
+                                <span>Методики оценки структурных подразделений и проектных команд «МСА–Business» и
+                                    «Team-Model».</span>
+                            </div>
+
+                            <div class="cases__lastDivs cases__lastDivs1">
+                                <!-- <img src="./photos/setting2.png" alt=""> -->
+                                <p>Участники тестирования:</p>
+
+                                <span><b>80 человек</b> руководители среднего и высшего звена.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ourAdventages">
+        <div class="container">
+            <h2>Наши преимущества</h2>
+            <div class="whatWeSolve__rightText">экономия времени экономия ость <br>
+                удобство применения диагностика <br>
+                иагностика удобство работы <br>
+                объективность
+            </div>
+
+
+            <div class="ourAdventages_main">
+                <div class="swiper2__element">
+                    <div>
+                        <div class="swiper2__element_logo">
+                            <img src="./photos/weDo11.png" alt="">
+                        </div>
+                        <h3 class="h3_swiper"> Экономия <br>
+                            времени</h3>
+                    </div>
+                    <p>оперативное получение информации
+                        при большом охвате сотрудников</p>
+                </div>
+
+                <div class="swiper2__element">
+                    <div>
+                        <div class="swiper2__element_logo">
+                            <img src="./photos/weDo12.png" alt="">
+                        </div>
+                        <h3 class="h3_swiper"> Экономия <br>
+                            средств</h3>
+                    </div>
+                    <p>закрытие широкого спектра кадровых задач при проведении одного тестирования, данные можно
+                        использовать веще в течении полугода после получения результатов </p>
+                </div>
+            </div>
+
+            <div class="ourAdventages_main">
+                <div class="swiper2__element">
+                    <div>
+                        <div class="swiper2__element_logo">
+                            <img src="./photos/weDo13.png" alt="">
+                        </div>
+                        <h3 class="h3_swiper"> Объективность
+                            <br>
+                            данных
+                        </h3>
+                    </div>
+                    <p>снижение вероятности совершить ошибку при принятии кадровых решений</p>
+                </div>
+
+                <div class="swiper2__element">
+                    <div>
+                        <div class="swiper2__element_logo">
+                            <img src="./photos/weDo14.png" alt="">
+                        </div>
+                        <h3 class="h3_swiper"> Удобство применения диагностики
+                        </h3>
+                    </div>
+                    <p>опрос можно проводить не отрываясь
+                        от рабочего процесса, потребуется
+                        примерно 1 час рабочего времени</p>
+                </div>
+                <div class="swiper2__element">
+                    <div>
+                        <div class="swiper2__element_logo">
+                            <img src="./photos/weDo15.png" alt="">
+                        </div>
+                        <h3 class="h3_swiper"> Удобство работы
+                            с результатами
+                        </h3>
+                    </div>
+                    <p>для работы с отчетами не требуется дополнительно платное бучение
+                        и специальные компетенции</p>
+                </div>
+            </div>
+
+            <div class="swiper3__main">
+
+                <div class="swiper swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <h3>Простые, <br>понятные отчеты</h3>
+
+                                <div class="swiper3__text">
+                                    <div class="swiper3Line"></div>
+                                    <p>содержащиеся важную информацию
+                                        о профессиональных, личностных качествах кандидатов и сотрудников</p>
+                                </div>
+                            </div>
+
+                            <img src="./photos/slider3_1.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <h3>Легкость в использовании Системы</h3>
+
+                                <div class="swiper3__text">
+                                    <div class="swiper3Line"></div>
+                                    <p>быстрая регистрация, простой алгоритм тестирования, онлайн-формат, мобильная
+                                        версия</p>
+                                </div>
+                            </div>
+
+                            <img src="./photos/slider3_2.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <h3>Гибкий комплекс <br> тестов</h3>
+
+                                <div class="swiper3__text">
+                                    <div class="swiper3Line"></div>
+                                    <p>для всесторонней оценки кандидатов, сотрудников <br> и команд</p>
+                                </div>
+                            </div>
+
+                            <img src="./photos/slider3_3.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiperBut3 swiper-button-prev2">
+                    <img src="./photos/arrow3.png" alt="">
+                </div>
+                <div class="swiperBut3 swiperBut3_3 swiper-button-next2">
+                    <img src="./photos/arrow4.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="form__toRequest">
+        <div class="container">
+            <div class="form__toRequest__main">
+
+                <h3>Хотите узнать больше <br>
+                    о секретах продуктивной работы?</h3>
+                <p><b> Оставьте заявку</b> и мы свяжемся с вами в ближайшее время</p>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя*" required class="form__input">
+                    <input type="text" placeholder="Телефон*" required class="form__input">
+                    <input type="email" placeholder="Email" class="form__input">
+                    <button>Отправить заявку</button>
+                </form>
+                <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
+                    соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и
+                    для целей, определенных в Согласии на обработку персональных данных.</span>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="stagesOfWork">
+        <div class="container">
+            <h2>Этапы работы</h2>
+            <div class="stagesOfWork__main">
+                <div class="stagesOfWork__el_mother">
+                    <div class="stagesOfWork-el">
+                        <p>/01</p>
+                        <h3>Анализ</h3>
+                        <span>Оценка производится <br>
+                            в формате онлайн</span>
+                    </div>
+                    <div class="stagesOfWork-el stagesOfWork-el2">
+                        <p>/02</p>
+                        <h3>Уникальная ссылка</h3>
+                        <span>Каждому участнику оценки предоставляется уникальная ссылка на прохождение теста</span>
+                    </div>
+                    <div class="stagesOfWork-el">
+                        <p>/03</p>
+                        <h3>Тестирование</h3>
+                        <span>Прохождение теста занимает <br> в среднем 15-20 минут</span>
+                    </div>
+                </div>
+                <img src="./photos/stageOfWork.png" alt="">
+
+                <div class="stagesOfWork__el_mother stagesOfWork__el_mother2">
+                    <div class="stagesOfWork-el">
+                        <p>/04</p>
+                        <h3>Отчет</h3>
+                        <span>Сразу после завершения тестирования автоматически формируется отчёт</span>
+                    </div>
+                    <div class="stagesOfWork-el stagesOfWork-el3">
+                        <p>/05</p>
+                        <h3>Поддержка</h3>
+                        <span>Поддержка специалистов <br> компании на всех этапах работы</span>
+                    </div>
+                    <div class="stagesOfWork-el">
+                        <p>/06</p>
+                        <h3>Экспертиза</h3>
+                        <span>Экспертиза и консалтинг на основе полученных данных в соответствии с запросом
+                            заказчика</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutCompany">
+        <div class="container">
+            <h2>О компании</h2>
+
+            <div class="whatWeSolve__text">
+                <div class="whatWeSolve_line"></div>
+                <p>Наша компания занимантся комплексной оценкой персонала, учебных и педагогических коллективов и
+                    профориентацией школьников. <br>
+                    Мы используем уникальные методики online, учитывающие психологические, культурные особенности и
+                    потребности сферы бизнеса и образования. Методики созданы совместно с научными сотрудниками ведущих
+                    ВУЗов страны (МГУ имени М. В. Ломоносова, РАНХиГС при Президенте РФ и др.) и прошли полный цикл
+                    разработки, гарантирующие их надежность.</p>
+            </div>
+            <div class="whatWeSolve__rightText"><img src="./photos/rightLogo.png" alt=""></div>
+
+            <div class="aboutCompany__info">
+                <div class="aboutCompany__info_block1">
+                    <div class="aboutCompany__info_block1__text1">
+                        <b> INNOMETRICA-</b> это: разработка инструментов и процедур оценки, кастомизация отчётов под
+                        задачи и бренд заказчика, интеграция в корпоративные инструменты, в том числе размещение на
+                        серверных мощностях заказчика, а также работа в рамках концепции White lable
+                    </div>
+
+                    <div class="aboutCompany_numbers">
+                        <div class="aboutCompany_number">
+                            <h3>+120</h3>
+                            <p>Выполненных проектов</p>
+                        </div>
+                        <div class="aboutCompany_number">
+                            <h3>10 лет</h3>
+                            <p>Опыта работы</p>
+                        </div>
+                        <div class="aboutCompany_number">
+                            <h3>500</h3>
+                            <p>Квалифицированных <br>сотрудников</p>
+                        </div>
+                        <div class="aboutCompany_number">
+                            <h3>10 лет</h3>
+                            <p>Опыта работы</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutCompany__info_block2">
+                    <h3>Уникальность компании:</h3>
+
+                    <div class="unique__company">
+                        <div class="unique__company__el">
+                            <img src="./photos/unique1.png" alt="">
+
+                            <p><b> Единственные поставщики </b> данных технологий в стране;</p>
+                        </div>
+                        <div class="unique__company__el">
+                            <img src="./photos/unique2.png" alt="">
+
+                            <p> У нас<b> исключительные права </b> на использование методик;</p>
+                        </div>
+                        <div class="unique__company__el">
+                            <img src="./photos/unique3.png" alt="">
+
+                            <p><b>Многолетний практический опыт </b> экспертизы для работы с данной методологией;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="ourTeam">
+        <div class="container">
+            <h2>Наша команда</h2>
+
+            <div class="team__members">
+                <div class="team__member">
+                    <img src="./photos/member.png" alt="">
+
+                    <h3>Гусев <br>
+                        Алексей Николаевич</h3>
+
+                    <div class="member_line"></div>
+                    <span>Доктор психологических наук, профессор кафедры психологии личности МГУ им. М.В.
+                        Ломоносова, эксперт в области тестологии и когнитивной психологии.</span>
+                </div>
+                <div class="team__member">
+                    <img src="./photos/member.png" alt="">
+
+                    <h3>Манолова <br>
+                        Олеся Николаевна</h3>
+
+                    <div class="member_line"></div>
+                    <span> Кандидат психологических наук, доцент, руководитель научно-образовательного направления
+                        Центра современных кадровых технологий ВШГУ РАНХиГС при Президенте РФ, эксперт в области
+                        диагностики и профессиональной оценки кадров.</span>
+                </div>
+                <div class="team__member">
+                    <img src="./photos/member.png" alt="">
+
+                    <h3>Анцупов <br>
+                        Анатолий Яковлевич</h3>
+
+                    <div class="member_line"></div>
+                    <span>Доктор психологических наук, профессор кафедры психологии Военного университета Министерства
+                        обороны Российской федерации, эксперт в области конфликтологии и социальной психологии.</span>
+                </div>
+                <div class="team__member">
+                    <img src="./photos/member.png" alt="">
+
+                    <h3>Марасанов <br>
+                        Герман Игоревич</h3>
+
+                    <div class="member_line"></div>
+                    <span>Кандидат психологических наук, доцент кафедры акмеологии и психологии профессиональной
+                        деятельности РАНХиГС при Президенте РФ, эксперт в области психологии личности и
+                        организационной психологии.</span>
+                </div>
+                <div class="team__member">
+                    <img src="./photos/member.png" alt="">
+
+                    <h3>Пряжников <br>
+                        Николай Сергеевич</h3>
+
+                    <div class="member_line"></div>
+                    <span>Доктор педагогических наук, профессор кафедры возрастной психологии МГУ им. М. В.
+                        Ломоносова, эксперт в области профориентации.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ourClients">
+        <div class="container">
+            <h2>Клиенты компании Innometrica</h2>
+
+            <div class="clients1">
+                <img src="./photos/client1.png" alt="">
+                <img src="./photos/client2.png" alt="">
+                <img src="./photos/client3.png" alt="">
+                <img src="./photos/client4.png" alt="">
+            </div>
+            <div class="clients2">
+                <img src="./photos/client   5.png" alt="">
+                <img src="./photos/client6.png" alt="">
+                <img src="./photos/client7.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="swiper4__main">
+
+                <div class="swiper swiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper4__head">
+                                <img src="./photos/review1.png" alt="">
+                                Сбербанк
+                            </div>
+                            <span>«Отдельно хотелось бы отметить УДОБСТВО прохождения тестирования с мобильных
+                                устройств, интуитивно ПОНЯТНЫЙ ИНТЕРФЕЙС, а также отзывчивость сотрудников компании
+                                Innometrica.»</span>
+                            <p>Директор управления по работе с партнерами Московского Банка ПАО Сбербанк Тарасов В. Г.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper4__head">
+                                <img src="./photos/review2.png" alt="">
+                                VimpelCom
+                            </div>
+                            <span>«Цели методики МСА ОТВЕЧАЮТ ПОТРЕБНОСТЯМ НАШЕЙ КОМПАНИИ в исследовании и оценке
+                                внутрикомандного взаимодействия, т.к. одной из ценностей Компании является «Работаю в
+                                команде (Collaborative)»</span>
+                            <p>HR Business Partner Sales&Marketing, ОАО «Вымпелком» Оксана Костина</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper4__head">
+                                <img src="./photos/review3.png" alt="">
+                                Паладин
+                            </div>
+                            <span>«МЫ С КОМПАНИЕЙ INNOMETRICA провели диагностику и получили отличные, жизнеутверждающие
+                                результаты. Обязательно продолжим сотрудничество с Innometrica. В планах — знакомство с
+                                другими HR- инструментами компании и тестирование команды минимум дважды в год.»</span>
+                            <p>Генеральный директор ООО «Паладин Инжиниринг» Александр Литинецкий</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper4__head">
+                                <img src="./photos/review1.png" alt="">
+                                Сбербанк
+                            </div>
+                            <span>«Отдельно хотелось бы отметить УДОБСТВО прохождения тестирования с мобильных
+                                устройств, интуитивно ПОНЯТНЫЙ ИНТЕРФЕЙС, а также отзывчивость сотрудников компании
+                                Innometrica.»</span>
+                            <p>Директор управления по работе с партнерами Московского Банка ПАО Сбербанк Тарасов В. Г.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper4__head">
+                                <img src="./photos/review2.png" alt="">
+                                VimpelCom
+                            </div>
+                            <span>«Цели методики МСА ОТВЕЧАЮТ ПОТРЕБНОСТЯМ НАШЕЙ КОМПАНИИ в исследовании и оценке
+                                внутрикомандного взаимодействия, т.к. одной из ценностей Компании является «Работаю в
+                                команде (Collaborative)»</span>
+                            <p>HR Business Partner Sales&Marketing, ОАО «Вымпелком» Оксана Костина</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next3">
+                    <img src="./photos/arrow4.png" alt="">
+                </div>
+                <div class="swiper-button-prev3">
+                    <img src="./photos/arrow3.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="form2">
+        <div class="container">
+            <div class="form2__main">
+
+                <div class="form2__block1">
+                    <h3>Хотите получить
+                        доступ к системе?</h3>
+                    <p><b> Оставьте заявку</b> и мы свяжемся с вами в ближайшее время</p>
+                    <form action="">
+                        <input type="text" placeholder="Ваше имя*" class="form__input" required>
+                        <input type="text" placeholder="Телефон*" class="form__input" required>
+                        <input type="text" class="form__input" placeholder="Email">
+                        <button>Отправить заявку</button>
+                    </form>
+                    <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
+                        соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на
+                        условиях и для целей, определенных в Согласии на обработку персональных данных.</span>
+                </div>
+                <img src="./photos/form2.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer_main">
+
+                <div>
+                    <img src="./photos/logo.png" alt="">
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Решения</a></li>
+                        <li><a href="">Инструменты</a></li>
+                        <li><a href="">Кейсы</a></li>
+                        <li><a href="">О компании</a></li>
+                    </ul>
+                </div>
+                <div class="footer__address">
+                    <p><b>Адрес: </b> Российская Федерация, 125252, г. Москва, вн. тер. г. муниципальный округ
+                        Хорошевский,
+                        ул. 3-я Песчаная, дом 2А, помещение 18.</p>
+                    <span class="confidation">Политика конфиденциальности</span>
+                </div>
+
+                <div class="contact">
+                    <a class="header__call" href="tel:+74996861136">
+                        <img src="./photos/call.png" alt="">
+                        +7 499 686-11-36
+                    </a>
+                    <span>Техническая поддержка:</span>
+                    <a class="header__call" href="mailto:support@innometrica.pro">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="27" viewBox="0 0 36 27" fill="none">
+                            <path
+                                d="M30.9854 0.0703125H4.3159C1.93522 0.0703125 0 2.00553 0 4.38622V22.6138C0 24.9945 1.93522 26.9297 4.3159 26.9297H30.9781C33.3588 26.9297 35.294 24.9945 35.294 22.6138V4.39352C35.3013 2.01283 33.3661 0.0703125 30.9854 0.0703125ZM33.3296 22.6138C33.3296 23.9064 32.278 24.958 30.9854 24.958H4.3159C3.02332 24.958 1.97173 23.9064 1.97173 22.6138V4.39352C1.97173 3.10094 3.02332 2.04935 4.3159 2.04935H30.9781C32.2707 2.04935 33.3223 3.10094 33.3223 4.39352V22.6138H33.3296Z"
+                                fill="black" />
+                            <path
+                                d="M22.259 13.2735L30.8908 5.53258C31.2925 5.16745 31.329 4.54672 30.9638 4.13776C30.5987 3.73611 29.978 3.6996 29.569 4.06474L17.6656 14.7486L15.3433 12.6746C15.336 12.6673 15.3287 12.66 15.3287 12.6527C15.2776 12.6016 15.2265 12.5578 15.1681 12.514L5.71837 4.05743C5.30941 3.6923 4.68868 3.72881 4.32355 4.13776C3.95841 4.54672 3.99493 5.16745 4.40388 5.53258L13.1379 13.3392L4.44039 21.4817C4.04604 21.8541 4.02414 22.4749 4.39657 22.8765C4.59375 23.081 4.85664 23.1905 5.11954 23.1905C5.36053 23.1905 5.60152 23.1029 5.79139 22.9276L14.6204 14.6683L17.0157 16.808C17.2055 16.9759 17.4392 17.0563 17.6729 17.0563C17.9066 17.0563 18.1476 16.9686 18.3301 16.8007L20.7912 14.5952L29.569 22.9349C29.7589 23.1175 30.0072 23.2051 30.2482 23.2051C30.5111 23.2051 30.7667 23.1029 30.9638 22.8984C31.3363 22.5041 31.3217 21.8761 30.9273 21.5036L22.259 13.2735Z"
+                                fill="black" />
+                        </svg>
+                        support@innometrica.pro
+                    </a>
+                    <span style="margin-top: 25px;">Отдел по работе с партнерами:</span>
+                    <a class="header__call" href="mailto:info@innometrica.pro">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="27" viewBox="0 0 36 27" fill="none">
+                            <path
+                                d="M30.9854 0.0703125H4.3159C1.93522 0.0703125 0 2.00553 0 4.38622V22.6138C0 24.9945 1.93522 26.9297 4.3159 26.9297H30.9781C33.3588 26.9297 35.294 24.9945 35.294 22.6138V4.39352C35.3013 2.01283 33.3661 0.0703125 30.9854 0.0703125ZM33.3296 22.6138C33.3296 23.9064 32.278 24.958 30.9854 24.958H4.3159C3.02332 24.958 1.97173 23.9064 1.97173 22.6138V4.39352C1.97173 3.10094 3.02332 2.04935 4.3159 2.04935H30.9781C32.2707 2.04935 33.3223 3.10094 33.3223 4.39352V22.6138H33.3296Z"
+                                fill="black" />
+                            <path
+                                d="M22.259 13.2735L30.8908 5.53258C31.2925 5.16745 31.329 4.54672 30.9638 4.13776C30.5987 3.73611 29.978 3.6996 29.569 4.06474L17.6656 14.7486L15.3433 12.6746C15.336 12.6673 15.3287 12.66 15.3287 12.6527C15.2776 12.6016 15.2265 12.5578 15.1681 12.514L5.71837 4.05743C5.30941 3.6923 4.68868 3.72881 4.32355 4.13776C3.95841 4.54672 3.99493 5.16745 4.40388 5.53258L13.1379 13.3392L4.44039 21.4817C4.04604 21.8541 4.02414 22.4749 4.39657 22.8765C4.59375 23.081 4.85664 23.1905 5.11954 23.1905C5.36053 23.1905 5.60152 23.1029 5.79139 22.9276L14.6204 14.6683L17.0157 16.808C17.2055 16.9759 17.4392 17.0563 17.6729 17.0563C17.9066 17.0563 18.1476 16.9686 18.3301 16.8007L20.7912 14.5952L29.569 22.9349C29.7589 23.1175 30.0072 23.2051 30.2482 23.2051C30.5111 23.2051 30.7667 23.1029 30.9638 22.8984C31.3363 22.5041 31.3217 21.8761 30.9273 21.5036L22.259 13.2735Z"
+                                fill="black" />
+                        </svg>
+                        info@innometrica.pro
+                    </a>
+                </div>
+            </div>
+            <div class="underfooter">Все права защищены. Copyright © 2021 ООО «ВЕБ СТРАТЕГ»ОГРН 1147748026172 ИНН:
+                7718314447</div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
