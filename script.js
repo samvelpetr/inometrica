@@ -1,8 +1,6 @@
 const swiper1 = new Swiper('.swiper1', {
     slidesPerView: 1,
-    autoplay: {
-        delay: 5000,
-    },
+   
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -78,4 +76,12 @@ const swiper4 = new Swiper('.swiper4', {
         prevEl: '.swiper-button-prev3',
     },
     spaceBetween:24
+})
+
+const swiper5 = new Swiper('.swiper5',{
+    slidesPerView: 5,
+    navigation: {
+        nextEl: '.swiper-button-next5',
+        prevEl: '.swiper-button-prev5',
+    },
 })

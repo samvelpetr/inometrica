@@ -123,7 +123,7 @@ a {
     font-family: Stem700;
     color: white;
     padding-top: 105px;
-    width: 730px;
+    width: 830px;
     text-decoration: underline;
 }
 
@@ -150,7 +150,7 @@ a {
 }
 
 .swiper__slideText4 h1 {
-    width: 1000px;
+    width: 766px;
 }
 
 .swiper__slideText>p {
@@ -557,13 +557,12 @@ h2 {
 .form__toRequest__main span {
     padding-top: 26px;
     font-size: 17px;
-    width: 1184px;
     display: block;
     font-family: Stem100;
     font-weight: 100;
     color: white;
     text-align: center;
-    margin: auto;
+    
 }
 
 .cases__button_main {
@@ -893,6 +892,7 @@ h2 {
 }
 
 .aboutCompany__info {
+    justify-content: space-between;
     display: flex;
     margin-top: 84px;
 }
@@ -910,9 +910,8 @@ h2 {
     display: flex;
     margin-top: 44px;
     gap: 62px;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 700px;
+    width: 880px;
 }
 
 .aboutCompany_number h3 {
@@ -958,20 +957,43 @@ h2 {
 }
 
 .team__members {
-    display: flex;
-    gap: 26px;
-    align-items: flex-start;
+    position: relative;
+   
 }
 
 .team__member {
-    width: 331px;
+    width: 331px !important;
 }
-
+.team__member img{
+    width: 100%;
+}
 .team__member h3 {
     margin: 46px 0 10px;
     font-size: 27px;
 }
-
+.inputCheck{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-top: 26px;
+    width: 1206px;
+    align-items: center;
+}
+.inputCheck2{
+    width: 666px;
+    margin: 0;
+}
+.inputCheck2 span{
+    width: auto !important;
+    margin: 0;
+    margin-left: 15px !important;
+}
+.inputCheck2 input{
+    width: auto !important;
+}
+.inputCheck span{
+    padding-top: 0;
+}
 .member_line {
     width: 94px;
     height: 6px;
@@ -1049,7 +1071,9 @@ h2 {
 }
 
 .swiper-button-next3,
-.swiper-button-prev3 {
+.swiper-button-prev3,
+.swiper-button-next5,
+.swiper-button-prev5 {
     width: 60px;
     height: 60px;
     display: flex;
@@ -1057,6 +1081,7 @@ h2 {
     border-radius: 100%;
     position: absolute;
     background: #F8F8F8;
+    cursor: pointer;
     justify-content: center;
 }
 
@@ -1064,7 +1089,14 @@ h2 {
     right: 0;
     top: 57%;
 }
-
+.swiper-button-next5{
+    right: -60px;
+    top: 50%;
+}
+.swiper-button-prev5{
+    left: -60px;
+    top: 50%;
+}
 .swiper-button-prev3 {
     left: 0;
     top: 57%;
@@ -1188,7 +1220,7 @@ h2 {
 .sticky__call {
     position: fixed;
     left: 6px;
-
+    z-index: 10000;
 
     display: block;
     top: 50%;
@@ -1266,12 +1298,12 @@ h2 {
 
 .sticky__toopen__main:hover .sticky__call1 {
     left: -13px;
-    top: 71px;
+    top: 68px;
 }
 
 .sticky__toopen__main:hover .sticky__call1_1 {
     left: -13px;
-    top: 129px;
+    top: 132px;
 }
 
 .account__mother {
@@ -1416,4 +1448,16 @@ h2 {
 .confidation__text::-webkit-scrollbar-thumb {
     border-radius: 7px;
     background: #A5A5A5;
+}
+.aboutCompany_number{
+    width: 390px;
+}
+
+.sticky__toopen:hover .sticky__toopenBack{
+    fill: #C91717;
+    transition: .5s;
+}
+.sticky__toopen:hover .sticky__toopenFront{
+    fill: white;
+    transition: .5s;
 }
