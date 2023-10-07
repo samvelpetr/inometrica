@@ -106,6 +106,51 @@ a {
 
 }
 
+.burger__menu {
+    position: absolute;
+    width: 417px;
+    background: white;
+    top: 0;
+    right: -100%;
+    transition: .5s;
+    height: 100vh;
+    z-index: 100000;
+    padding: 24px 30px 50px 43px;
+}
+
+.right0 {
+    right: 0;
+}
+
+.close {
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.burger_contact {
+    margin-top: 386px;
+}
+
+.burger_contact div {
+    display: flex;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.burger__menu_main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 52px;
+}
+
+.burger__menu_main ul a {
+    font-size: 18px;
+    font-family: Stem500;
+    text-transform: uppercase;
+}
+
 .swiper__slideText2 {
     background: url(./photos/slider1_2.png);
     height: 854px;
@@ -450,6 +495,14 @@ h2 {
     /* font-family: Stem500; */
 }
 
+.displayBlock {
+    display: block !important;
+}
+
+.displayNone {
+    display: none !important;
+}
+
 .tool__element_open__allow {
     display: flex;
     row-gap: 60px;
@@ -758,6 +811,7 @@ h2 {
     width: 18px;
     background: #F8F8F8 !important;
     height: 18px;
+    opacity: 1;
 }
 
 .swiper3 .swiper-pagination-bullet-active {
@@ -926,6 +980,72 @@ h2 {
     font-family: Stem300;
 }
 
+.sticky__call3 {
+    position: fixed;
+    right: 30px;
+    bottom: 46px;
+    z-index: 10000;
+    width: 81px;
+    height: 81px;
+    display: none;
+}
+
+
+.sticky__call3__open1 {
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    top: 13px;
+}
+
+.sticky__call3_main {
+    position: relative;
+}
+
+.sticky__call3__1,
+.sticky__call3__2 {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+}
+
+.sticky__call3__open2 {
+    position: absolute;
+    left: 0;
+    transition: .5s;
+
+    top: 13px;
+}
+
+
+
+.left1 {
+    left: -137px;
+}
+
+.left2 {
+    left: -67px;
+}
+
+.sticky__call3__open1:hover .sticky__back {
+    fill: white;
+}
+
+.sticky__call3__open1:hover .sticky__front {
+    fill: #C91717;
+}
+
+
+.sticky__call3__open2:hover .sticky__back {
+    fill: white;
+}
+
+.sticky__call3__open2:hover .sticky__front {
+    fill: #C91717;
+}
+
 .aboutCompany__info_block2 {
     border-radius: 10px;
     background: #FFF;
@@ -954,6 +1074,10 @@ h2 {
 .unique__company__el p {
     margin-top: 24px;
     font-family: Stem100;
+}
+
+.underfooter2 {
+    display: none;
 }
 
 .team__members {
@@ -1182,6 +1306,10 @@ h2 {
     font-size: 17px;
     font-weight: 100;
     font-family: Stem100;
+}
+
+.ourAdventages_main2 {
+    display: none;
 }
 
 .footer_main {
@@ -1515,8 +1643,13 @@ h2 {
     overflow: hidden;
 }
 
-.footer_main li a{
+.footer_main li a {
     font-size: 18px;
+    text-transform: uppercase;
+}
+
+.tools__mother2 {
+    display: none;
 }
 
 @media screen and (max-width:1760px) {
@@ -1535,236 +1668,1190 @@ h2 {
     .swiper__slideText>p {
         font-size: 23px;
     }
-    .loginToCabinet{
+
+    .loginToCabinet {
         margin-top: 33px;
     }
-    .slider__icons{
+
+    .slider__icons {
         gap: 22px;
     }
-    .slider__icons div p{
+
+    .slider__icons div p {
         font-size: 23px;
         width: 302px;
     }
-    .swiper1{
+
+    .swiper1 {
         height: 704px !important;
     }
-    .swiper__slideText2 .slider__icons div p{
+
+    .swiper__slideText2 .slider__icons div p {
         width: 301px;
     }
-    .swiper__slideText{
+
+    .swiper__slideText {
         height: 704px;
     }
-    .swiper__slideText3 .slider__icons{
+
+    .swiper__slideText3 .slider__icons {
         margin-top: 160px;
     }
-    .whatWeSolve__text p{
+
+    .whatWeSolve__text p {
         width: 833px;
     }
-    .swiper2__element{
+
+    .swiper2__element {
         width: 430px;
     }
-    .swiper2__element h3{
+
+    .swiper2__element h3 {
         font-size: 25px;
         width: 260px;
     }
-    .h3_swiper{
+
+    .h3_swiper {
         width: 246px !important;
     }
-    .swiper2__element p{
+
+    .swiper2__element p {
         width: 380px;
     }
-    h2{
+
+    h2 {
         font-size: 55px;
         width: 422px;
     }
-    .tools__mother{
+
+    .tools__mother {
         width: 432px;
     }
+
     .tool__element {
         padding-right: 75px;
     }
-    .tool__element_open .whatWeSolve__text p{
+
+    .tool__element_open .whatWeSolve__text p {
         width: 742px;
         font-size: 23px;
     }
-    .tool__element_open{
+
+    .tool__element_open {
         width: 886px;
         height: 890px;
     }
-    .tool__element_open .whatWeSolve__text{
+
+    .tool__element_open .whatWeSolve__text {
         margin-top: 0;
     }
-    .tool__element_open h3{
+
+    .tool__element_open h3 {
         padding-top: 22px;
         font-size: 25px;
     }
-    .tool__element_open__allow-element{
+
+    .tool__element_open__allow-element {
         width: 239px;
     }
-    .tool__element_open__allow-element span{
+
+    .tool__element_open__allow-element span {
         font-size: 18px;
     }
-    .tool__element_open1 .tool__element_open__allow-element{
+
+    .tool__element_open1 .tool__element_open__allow-element {
         width: 342px;
     }
-    #whatWeSolve{
+
+    #whatWeSolve {
         margin-top: 80px;
     }
-    #toolsandReviews{
+
+    #toolsandReviews {
         margin-top: 80px;
     }
-    #form__toRequest{
+
+    #form__toRequest {
         margin-top: 80px;
         margin-bottom: 80px;
     }
-    #form__toRequest h3{
+
+    #form__toRequest h3 {
         font-size: 55px;
         padding-top: 69px;
     }
-    #form__toRequest p{
+
+    #form__toRequest p {
         font-size: 23px;
         padding: 21px 0 49px;
     }
-    .form__input{
+
+    .form__input {
         width: 260px;
     }
-    .inputCheck{
+
+    .inputCheck {
         width: 891px;
         margin-top: 48px;
     }
-    .form__toRequest__main{
+
+    .form__toRequest__main {
         height: 570px;
     }
-    .cases_element>h3{
+
+    .cases_element>h3 {
         font-size: 40px;
     }
-    .cases_texts_head h3{
+
+    .cases_texts_head h3 {
         font-size: 25px;
     }
-    .cases_texts-el p{
+
+    .cases_texts-el p {
         font-size: 20px;
         width: 382px;
     }
-    .cases_texts-el ul{
+
+    .cases_texts-el ul {
         width: 397px;
     }
-    .cases__lastDivs{
+
+    .cases__lastDivs {
         width: 433px;
     }
-    .cases__lastDivs p{
+
+    .cases__lastDivs p {
         font-size: 25px;
     }
-    #ourAdventages{
+
+    #ourAdventages {
         margin-top: 50px;
     }
-    .swiper3__text p{
+
+    .swiper3__text p {
         width: 348px;
     }
-    .swiper3 img{
+
+    .swiper3 img {
         width: 750px;
     }
-    .swiper3__4{
+
+    .swiper3__4 {
         width: 386px !important;
     }
-    .swiper3 .swiper-slide{
+
+    .swiper3 .swiper-slide {
         align-items: center;
     }
-    .stagesOfWork__main img{
+
+    .stagesOfWork__main img {
         width: 520px;
         align-self: center;
     }
-    .stagesOfWork-el h3{
+
+    .stagesOfWork-el h3 {
         font-size: 25px;
     }
-    .stagesOfWork-el{
+
+    .stagesOfWork-el {
         width: 320px;
     }
-    .stagesOfWork-el3{
+
+    .stagesOfWork-el3 {
         margin-left: 45px;
     }
-    .stagesOfWork-el2{
+
+    .stagesOfWork-el2 {
         margin-right: 45px;
     }
-    #aboutCompany{
+
+    #aboutCompany {
         margin-top: 80px;
     }
-    #aboutCompany .whatWeSolve__text p{
+
+    #aboutCompany .whatWeSolve__text p {
         width: 949px;
     }
-    #aboutCompany .whatWeSolve_line{
+
+    #aboutCompany .whatWeSolve_line {
         height: 220px;
     }
-    .aboutCompany__info{
+
+    .aboutCompany__info {
         margin-top: 76px;
     }
-    .aboutCompany_number h3{
+
+    .aboutCompany_number h3 {
         font-size: 70px;
     }
-    .aboutCompany_numbers{
+
+    .aboutCompany_numbers {
         width: 682px;
     }
-    .aboutCompany_number{
+
+    .aboutCompany_number {
         width: 302px;
     }
-    .unique__company{
+
+    .unique__company {
         column-gap: 20px;
     }
-    .unique__company__el{
+
+    .unique__company__el {
         width: 276px;
     }
-    #ourTeam h2{
+
+    #ourTeam h2 {
         margin-top: 80px;
     }
-    .team__member{
+
+    .team__member {
         width: 240px !important;
     }
-    .team__member1 img{
+
+    .team__member1 img {
         width: 76px;
     }
-    #ourClients h2{
+
+    #ourClients h2 {
         margin: 80px 0 64px;
         width: 600px;
     }
-    #reviews h2{
+
+    #reviews h2 {
         margin-top: 80px;
     }
-    .form2__block1{
+
+    .form2__block1 {
         width: 655px;
         padding-top: 60px;
     }
-    .form2__block1 h3{
+
+    .form2__block1 h3 {
         font-size: 55px;
         width: auto;
     }
-    .form2__block1 p{
+
+    .form2__block1 p {
         font-size: 23px;
         padding-right: 35px;
     }
-    #form2 img{
+
+    #form2 img {
         width: 685px;
         /* height: 901px; */
     }
-    
-    #form2{
+
+    #form2 {
         margin-bottom: 70px;
         margin-top: 60px;
     }
-    .form2__block1 input{
+
+    .form2__block1 input {
         padding-top: 18px;
         padding-bottom: 18px;
         width: 376px;
     }
-    .form2__block1 button{
+
+    .form2__block1 button {
         width: 376px;
         padding: 14px 0;
     }
-    .form2__block1 span{
-        margin-top: 0; 
+
+    .form2__block1 span {
+        margin-top: 0;
         padding-bottom: 15px;
-        
+
     }
+
     .inputCheck {
         width: 560px;
         margin-top: 42px;
     }
+
+    .sticky__call,
+    .sticky__call2 {
+        display: none;
+    }
+
+    .sticky__call3__2 {
+        display: none;
+    }
+
+    .sticky__call3 {
+        display: block;
+    }
+}
+
+.burgerButton {
+    display: none;
+}
+
+@media screen and (max-width:1350px) {
+    .container {
+        max-width: 708px;
+    }
+
+    .burgerButton {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__main ul {
+        display: none;
+    }
+
+    .sticky__call3 {
+        display: none;
+    }
+
+    .swiper__slideText {
+        height: 727px;
+        padding-left: 30px;
+    }
+
+    .swiper1_slide {
+        background: none;
+        padding-left: 0;
+    }
+
+    #section1 .container {
+        max-width: 100%;
+
+    }
+
+    .swiper__slideText h1 {
+        font-size: 40px;
+        width: 620px;
+        padding-top: 35px;
+    }
+
+    .loginToCabinet {
+        margin-top: 25px;
+        width: 332px;
+        font-size: 20px;
+    }
+
+    .swiper__slideText>p {
+        font-size: 20px;
+    }
+
+    .slider__icons {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 37px;
+    }
+
+    .slider__icons div p {
+        font-size: 20px;
+    }
+
+    .swiperNavigation1 .swiper-pagination-bullet {
+        height: 50px;
+    }
+
+    .swiperNavigation1 .swiper-button-prev {
+        top: -160px;
+    }
+
+    .swiperNavigation1 .swiper-button-next {
+        top: 185px;
+    }
+
+    .swiperNavigation1 {
+        top: 66%;
+    }
+
+    h2 {
+        font-size: 40px;
+        width: 304px;
+    }
+
+    .whatWeSolve__text {
+        gap: 20px;
+    }
+
+    .whatWeSolve__rightText {
+        font-size: 25px;
+        right: -200px;
+    }
+
+    .whatWeSolve__text p {
+        width: auto;
+        font-size: 20px;
+    }
+
+    .swiper2__element {
+        padding-top: 29px;
+        padding-left: 15px;
+        width: 346px;
+    }
+
+    .swiper2__element>div {
+        align-items: flex-start;
+        margin-bottom: 20px;
+        gap: 18px;
+        flex-direction: column;
+    }
+
+    .swiper2__element h3 {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .swiper2__element_logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .swiper2__element_logo img {
+        width: 30px;
+    }
+
+    .swiper2__element p {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .h3_swiper {
+        width: auto !important;
+    }
+
+    .swiperBut2 {
+        top: 47%;
+        width: 50px;
+        left: -12px;
+        height: 50px;
+    }
+
+    .swiperBut2_2 {
+        left: auto;
+        right: -12px;
+    }
+
+    .swiper2__elementHead {
+        gap: 16px;
+        width: 346px;
+    }
+
+    .swiper2 {
+        margin-top: 60px;
+        padding-top: 15px !important;
+    }
+
+    .tools__main {
+        flex-direction: column;
+    }
+
+    .tools__mother {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tool__element {
+        padding: 0;
+        padding-left: 23px;
+        width: 225px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 107px;
+    }
+
+    .tool__element p {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .tool__element3 {
+        padding: 0;
+    }
+
+    .tool__element_open {
+        width: 704px;
+        padding-top: 48px;
+        padding-left: 32px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .tool__element_open .whatWeSolve__text {
+        gap: 20px;
+    }
+
+    .tool__element_open .whatWeSolve__text p {
+        width: 589px;
+        font-size: 20px;
+    }
+
+    .tool__element_open h3 {
+        padding-top: 33px;
+    }
+
+    .tool__element_open__allow {
+        padding-top: 22px;
+        gap: 20px;
+    }
+
+    .tool__element_open__allow-element span {
+        font-size: 16px;
+    }
+
+    .tool__element_open__allow-element p {
+        width: auto;
+        padding-bottom: 22px;
+    }
+
+    #form__toRequest .container {
+        max-width: 100%;
+    }
+
+    #form__toRequest h3 {
+        font-size: 40px;
+    }
+
+    #form__toRequest p {
+        font-size: 20px;
+    }
+
+    .form__toRequest__main form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form__toRequest__main {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .form__input {
+        width: 376px;
+    }
+
+    .form__toRequest__main button {
+        width: 376px;
+    }
+
+    .inputCheck span {
+        font-size: 14px;
+    }
+
+    .inputCheck {
+        width: 689px;
+    }
+
+    .cases__button {
+        width: 225px;
+        font-size: 20px;
+    }
+
+    .cases_element>h3 {
+        width: 635px;
+        font-size: 30px;
+    }
+
+    .cases__element_main {
+        padding-left: 0;
+    }
+
+    .cases_texts_head h3 {
+        font-size: 20px;
+    }
+
+    .cases_texts-el p {
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .cases_texts_main {
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cases_texts-el ul {
+        width: 327px;
+    }
+
+    .cases__lastDivs {
+        width: 346px;
+        padding-top: 32px;
+        padding-left: 26px;
+        background-size: 56px;
+    }
+
+    .cases__lastDivs span {
+        width: 265px;
+        padding-top: 24px;
+        font-size: 16px;
+    }
+
+    .cases__lastDivs p {
+        font-size: 20px;
+    }
+
+    .cases__button_main {
+        margin-top: 30px;
+    }
+
+    .cases__lastDivs__mother {
+        display: flex;
+        gap: 16px;
+    }
+
+    #toolsandReviews {
+        margin-top: 70px;
+    }
+
+    #whatWeSolve {
+        margin-top: 70px;
+    }
+
+    #whatWeSolve .whatWeSolve_line {
+        height: 50px;
+    }
+
+    #form__toRequest {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .cases__element_main {
+        margin-top: 30px;
+    }
+
+    .ourAdventages_main {
+        display: none;
+    }
+
+    .ourAdventages_main2 {
+        display: flex;
+        gap: 13px;
+    }
+
+    .ourAdventages_main2 .swiper2__element {
+        padding-right: 44px;
+    }
+
+    .swiper3 .swiper-slide {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .swiper3 .swiper-slide div {
+        align-self: flex-start;
+    }
+
+    .swiper3__main {
+        margin-top: 80px;
+    }
+
+    .swiper3 h3 {
+        padding-left: 0;
+    }
+
+    .swiper3 img {
+        width: 600px;
+        align-self: center;
+    }
+
+    .swiperBut3 {
+        top: 71%;
+        left: -2%;
+    }
+
+    .swiperBut3_3 {
+        left: 93%;
+    }
+
+    .swiper3__4 {
+        margin-right: 0;
+    }
+
+    .form__toRequest__main {
+
+        background: url(./photos/form2Back.png);
+        background-size: 100% 100%;
+    }
+
+    .stagesOfWork__main img {
+        display: none;
+    }
+
+    .stagesOfWork-el2 {
+        margin: 20px 0;
+
+    }
+
+    .stagesOfWork-el3 {
+        margin: 20px 0;
+    }
+
+    .stagesOfWork-el {
+        width: 346px;
+        height: 216px;
+        padding: 30px 10px 40px 40px;
+    }
+
+    .stagesOfWork__el_mother {
+        margin-top: 0;
+        align-self: flex-start;
+    }
+
+    .stagesOfWork__main {
+        align-items: flex-start;
+    }
+
+    .stagesOfWork-el span {
+        font-size: 16px;
+    }
+
+    #aboutCompany {
+        margin-top: 70px;
+    }
+
+    #aboutCompany .whatWeSolve__rightText {
+        display: none;
+    }
+
+    #aboutCompany .whatWeSolve__text p {
+        width: 690px;
+        font-size: 20px;
+    }
+
+    .aboutCompany__info {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .aboutCompany_number h3 {
+        font-size: 60px;
+    }
+
+    .aboutCompany_number p {
+        font-size: 20px;
+    }
+
+    .aboutCompany_numbers {
+        gap: 20px;
+        row-gap: 35px;
+    }
+
+    .aboutCompany__info_block2 {
+        margin-top: 30px;
+    }
+
+    .aboutCompany__info_block2 h3 {
+        font-size: 30px;
+    }
+
+    .unique__company__el img {
+        width: 50px;
+    }
+
+    .unique__company {
+        row-gap: 30px;
+    }
+
+    .team__member {
+        width: 216px !important;
+    }
+
+    .team__member h3 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+
+    .team__member p {
+        font-size: 18px;
+    }
+
+    .team__member span {
+        font-size: 16px;
+        display: block;
+        padding-top: 16px;
+    }
+
+    #ourTeam h2 {
+        margin-top: 70px;
+    }
+
+    .swiper-button-next5 {
+        right: 19px;
+        top: -20%;
+
+    }
+
+    .swiper-button-prev5 {
+        left: 528px;
+        top: -20%;
+
+    }
+
+    #ourClients h2 {
+        margin: 70px 0 30px;
+    }
+
+    .clients1 img {
+        width: 20%;
+    }
+
+    .clients2 img {
+        width: 20%;
+    }
+
+    #reviews h2 {
+        margin: 70px 0 30px;
+    }
+
+    .swiper4 .swiper-slide {
+        padding: 20px;
+    }
+
+    .swiper4__head {
+        font-size: 20px;
+        gap: 13px;
+    }
+
+    .swiper-button-next3 {
+        right: 19px;
+        top: 0;
+    }
+
+    .swiper4 {
+        padding: 0 5px;
+    }
+
+    .swiper-button-prev3 {
+        left: 528px;
+        top: 0;
+
+    }
+
+    .acount_main {
+        width: 768px;
+        padding: 47px 0 40px;
+    }
+
+    .acount_main input {
+        width: 440px;
+    }
+
+    .acount_main button {
+        width: 440px;
+    }
+
+    .inputCheck3 {
+        width: 539px;
+    }
+
+    .acount_main span {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .acount_OK {
+        padding: 36px 0;
+        width: 370px;
+    }
+
+    .confidation2 {
+        cursor: pointer;
+    }
+
+    .acount_OK h3 {
+        font-size: 27px;
+    }
+
+    .acount_OK p {
+        font-size: 18px;
+    }
+
+    .acount_main h3 {
+        font-size: 40px;
+    }
+
+    .acount_main p {
+        font-size: 20px;
+    }
+
+    #form2 .container {
+        max-width: 100%;
+    }
+
+    .form2__main img {
+        display: none;
+    }
+
+    .form2__block1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-bottom: 50px;
+        background: url(./photos/form2Back.png);
+    }
+
+    .form2__block1 h3 {
+        font-size: 40px;
+    }
+
+    .footer__address {
+        display: none;
+    }
+
+    .footer_main li a {
+        font-size: 16px;
+    }
+
+    footer .header__call {
+        gap: 20px;
+        font-family: Stem500;
+        font-weight: normal;
+        font-size: 23px;
+    }
+
+    .underfooter {
+        display: none;
+    }
+
+    .underfooter2 {
+        display: flex;
+        margin-top: 28px;
+        justify-content: space-between;
+    }
+
+    .underfooter2 div {
+        font-family: Stem100;
+    }
+
+    .underfooter2 span {
+        font-family: Stem100;
+
+    }
+
+    .addres2 {
+        width: 334px;
+    }
+
+    .addres2__1 {
+        width: 300px;
+    }
+
+    .addres2__1 p {
+        font-size: 14px;
+    }
+
+    .underfooter2 p {
+        margin-top: 8px;
+        margin-bottom: 42px;
+        font-family: Stem100;
+
+    }
+
+    .swiper3 .swiper-pagination {
+        left: 1% !important;
+    }
+
+    .swiper3 .swiper-slide {
+        padding-right: 0;
+    }
+
+    .confidation__main {
+        width: 768px;
+        padding-bottom: 48px;
+    }
+
+    .confidation__main h3 {
+        font-size: 35px;
+    }
+
+    .confidation__text {
+        font-size: 17px;
+    }
+
+    h2 {
+        padding-left: 0;
+    }
+
+    #stagesOfWork h2 {
+        width: auto;
+        padding-left: 0;
+    }
+}
+option{
+    border: none;
+    padding: 20px 0;
+}
+
+
+@media screen and (max-width:730px) {
+    .container {
+        max-width: 345px;
+    }
+
+    .header__logo img {
+        width: 79px;
+    }
+
+    .header__call img {
+        width: 15px;
+    }
+
+    .header__call {
+        font-size: 16px;
+    }
+
+    .burgerButton img {
+        width: 38px;
+    }
+
+    .header__main {
+        padding: 10px 0;
+    }
+
+    .swiper__slideText h1 {
+        font-size: 30px;
+        padding-top: 38px;
+        width: auto;
+    }
+
+    .swiper__slideText>p {
+        font-size: 18px;
+        width: auto;
+    }
+
+    p {
+        font-size: 18px;
+
+    }
+
+    .slider__icons div {
+        width: auto;
+    }
+
+    .swiperNavigation1 {
+        position: static;
+    }
+
+    .swiperNavigation1 .swiper-pagination {
+        right: 0 !important;
+        bottom: 40px !important;
+    }
+
+    .swiperNavigation1 .swiper-pagination-bullet {
+        height: 3px;
+        margin-right: 20px !important;
+        width: 50px;
+    }
+
+    .swiper__slideText {
+        padding-left: 20px;
+    }
+
+    .swiperNavigation1 .swiper-button-next {
+        top: auto;
+        bottom: 24px;
+        right: 30px !important;
+        transform: rotate(-90deg);
+    }
+
+    .swiperNavigation1 .swiper-button-prev {
+        top: auto;
+        bottom: 24px;
+        left: 30px !important;
+        transform: rotate(-90deg);
+    }
+
+    .swiper1 {
+        height: 724px !important;
+    }
+
+    .swiperNavigation1 .swiper-pagination-bullet-active p {
+        display: none !important;
+    }
+
+    .swiper__slideText3 .slider__icons {
+        margin-top: 100px;
+    }
+
+    .slider__icons div p {
+        width: auto;
+    }
+
+    .whatWeSolve__rightText {
+        font-size: 20px;
+        right: -220px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #whatWeSolve {
+        margin-top: 50px;
+    }
+
+    .whatWeSolve__text p {
+        font-size: 16px;
+    }
+
+    .whatWeSolve__text {
+        gap: 15px;
+    }
+
+    .swiper2 {
+        padding-left: 5px !important;
+        margin-top: 31px;
+    }
+
+    .swiper2__element {
+        height: 250px !important;
+        width: 335px;
+    }
+
+    .swiper2__element h3 {
+        width: 221px !important;
+        font-size: 18px;
+    }
+
+    .swiper2__element>div {
+        flex-direction: row;
+        gap: 18px;
+    }
+
+    #toolsandReviews {
+        margin-top: 50px;
+    }
+
+    .tools__mother {
+        display: none;
+    }
+
+    .tools__mother2 {
+        display: block;
+    }
+
+    .tools__mother2 select {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.10);
+        padding: 20px 27px;
+        color: #C91717;
+        outline: none;
+        font-weight: 500;
+
+    }
+
+    .tools__mother2 option {
+        background: none !important;
+    }
+
+  
 }
