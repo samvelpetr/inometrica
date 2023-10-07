@@ -33,7 +33,7 @@ const swiper2 = new Swiper('.swiper2', {
     loop: true,
 
     breakpoints: {
-        730:{
+        730: {
             slidesPerView: 2,
 
         },
@@ -92,7 +92,7 @@ const swiper3 = new Swiper('.swiper3', {
 })
 
 const swiper4 = new Swiper('.swiper4', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     navigation: {
         nextEl: '.swiper-button-next3',
         prevEl: '.swiper-button-prev3',
@@ -101,6 +101,10 @@ const swiper4 = new Swiper('.swiper4', {
     loop: true,
 
     breakpoints: {
+        730: {
+            slidesPerView:2,
+
+        },
         1350: {
             slidesPerView: 3,
             spaceBetween: 24,
@@ -110,7 +114,7 @@ const swiper4 = new Swiper('.swiper4', {
 })
 
 const swiper5 = new Swiper('.swiper5', {
-    slidesPerView: 3,
+    slidesPerView: 2,
     navigation: {
         nextEl: '.swiper-button-next5',
         prevEl: '.swiper-button-prev5',
@@ -118,6 +122,10 @@ const swiper5 = new Swiper('.swiper5', {
     loop: true,
 
     breakpoints: {
+        730: {
+            slidesPerView: 3,
+
+        },
         1350: {
             slidesPerView: 5,
         }
@@ -216,14 +224,46 @@ sticky__call3__2.addEventListener('click', function () {
     sticky__call3__open2.classList.remove('left2')
 })
 
-const burgerButton =document.querySelector('.burgerButton')
+const burgerButton = document.querySelector('.burgerButton')
 
-const burger__menu=document.querySelector('.burger__menu');
+const burger__menu = document.querySelector('.burger__menu');
 
-burgerButton.addEventListener('click',function(){
+burgerButton.addEventListener('click', function () {
     burger__menu.classList.add('right0')
 })
-const close =document.querySelector('.close')
-close.addEventListener('click',function(){
+const close = document.querySelector('.close')
+close.addEventListener('click', function () {
     burger__menu.classList.remove('right0')
+})
+
+
+const tools__list_selected = document.querySelector('.tools__list_selected');
+const tools__list__el = [...document.querySelectorAll('.tools__list__el')].slice(0, 3)
+let bool1 = true
+tools__list_selected.onclick = function () {
+    if (bool1) {
+
+        tools__list__el[0].classList.add('displayBlock')
+        tools__list__el[1].classList.add('displayBlock')
+        tools__list__el[2].classList.add('displayBlock')
+    }
+    bool1 = false
+}
+tools__list__el.forEach((e, i) => {
+    if (!bool1) {
+
+        e.addEventListener('click', function () {
+            tools__list__el[0].classList.remove('tools__list_selected')
+            tools__list__el[1].classList.remove('tools__list_selected')
+            tools__list__el[2].classList.remove('tools__list_selected')
+            e.classList.add('tools__list_selected')
+            tools__list__el[0].classList.remove('displayBlock')
+            tools__list__el[1].classList.remove('displayBlock')
+            tools__list__el[2].classList.remove('displayBlock')
+            e.classList.add('displayBlock')
+            // bool1 = true
+
+
+        })
+    }
 })
