@@ -3169,7 +3169,185 @@ option {
     .swiper4 .swiper-slide span {
         font-size: 14px;
     }
+
     .swiper4 .swiper-slide p {
         font-size: 14px;
+    }
+
+    .swiper-button-prev3 {
+        left: 273px;
+    }
+
+    .swiper-button-next3 {
+        right: 29px;
+    }
+
+    .swiper4 {
+        padding: 0 4px !important;
+    }
+
+    .swiper4__head {
+        font-size: 18px;
+    }
+
+    .swiper4__head img {
+        width: 52px;
+    }
+
+    .swiper4 .swiper-slide {
+        height: auto;
+        justify-content: flex-start;
+        gap: 33px;
+    }
+
+    .swiper4 .swiper-wrapper {
+        align-items: flex-start !important;
+    }
+
+    #form2 {
+        margin: 50px 0;
+    }
+
+    .form2__block1 h3 {
+        font-size: 30px;
+    }
+
+    .form2__block1 {
+        padding-top: 45px;
+    }
+
+    .form2__block1 p {
+        padding: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .form2__block1 form {
+        margin-top: 35px;
+    }
+
+    .form2__block1 input {
+        width: 314px;
+    }
+
+    .form2__block1 button {
+        width: 314px;
+        font-size: 20px;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .footer_main {
+        flex-wrap: wrap;
+    }
+
+    .footer__logo img {
+        width: 126px;
+    }
+
+    .footer_main li a {
+        font-size: 14px;
+    }
+
+    .contact {
+        text-align: center;
+
+    }
+
+    .contact .header__call {
+        justify-content: center;
+        margin-top: 27px;
+    }
+
+    .contact span {
+        margin-top: 15px;
+    }
+
+    .contact .header__call img {
+        width: 24px;
+
+    }
+
+    .underfooter2 {
+        gap: 19px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .addres2 {
+        font-size: 14px;
+        align-self: center;
+        width: 297px;
+    }
+
+    .addres2__1 {
+        font-size: 12px;
+    }
+
+    .burger__menu {
+        width: 100%;
+    }
+
+    .burger__logo img {
+        width: 101px;
+    }
+
+    .burger__logo_main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger__menu_main ul {
+        margin-top: 69px;
+    }
+
+    .burger__menu_main ul a {
+        font-size: 16px;
+    }
+    .burger_contact{
+        margin-top: 266px;
+    }
+    .burger_contact .header__call{
+        font-size: 22px;
+    }
+    .burger_contact .header__call img{
+        width: 24px;
+    }
+    .burger_contact svg{
+        width: 40px;
+    }
+    .acount_main {
+        width: 375px;
+        padding: 35px 30px 21px;
+    }
+    .acount_main h3{
+        font-size: 27px;
+    }
+    .acount_main p{
+        font-size: 18px;
+    }
+    .acount_main input{
+        width: 314px;
+    }
+    .acount_main button {
+        width: 314px;
+    }
+    .acount_main form{
+        gap: 15px;
+    }
+    .acount_main p{
+        margin: 12px 0 29px;
+    }
+    input{
+        font-size: 16px !important;
+    }
+    .acount_main span{
+        font-size: 10px;
+    }
+    .inputCheck3{
+        margin-top: 20px;
     }
 }
