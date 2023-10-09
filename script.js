@@ -102,7 +102,7 @@ const swiper4 = new Swiper('.swiper4', {
 
     breakpoints: {
         730: {
-            slidesPerView:2,
+            slidesPerView: 2,
 
         },
         1350: {
@@ -237,33 +237,86 @@ close.addEventListener('click', function () {
 })
 
 
-const tools__list_selected = document.querySelector('.tools__list_selected');
+// const tools__list_selected = document.querySelector('.tools__list_selected');
 const tools__list__el = [...document.querySelectorAll('.tools__list__el')].slice(0, 3)
-let bool1 = true
-tools__list_selected.onclick = function () {
-    if (bool1) {
+const tools__mother2 = document.querySelector('.tools__mother2')
 
-        tools__list__el[0].classList.add('displayBlock')
-        tools__list__el[1].classList.add('displayBlock')
-        tools__list__el[2].classList.add('displayBlock')
+tools__mother2.addEventListener('click', function () {
+    tools__list__el[0].classList.toggle('displayBlock')
+    tools__list__el[1].classList.toggle('displayBlock')
+    tools__list__el[2].classList.toggle('displayBlock')
+})
+
+tools__list__el[1].addEventListener('click', function (e) {
+    if (!tools__list__el[1].classList.contains('tools__list_selected')) {
+        tools__list__el[1].classList.add('tools__list_selected')
+        tools__list__el[0].classList.remove('tools__list_selected')
+        tools__list__el[2].classList.remove('tools__list_selected')
+        tool__element_open[0].classList.remove('tool__element_open-active')
+        tool__element_open[1].classList.add('tool__element_open-active')
+        tool__element_open[2].classList.remove('tool__element_open-active')
     }
-    bool1 = false
-}
-tools__list__el.forEach((e, i) => {
-    if (!bool1) {
+})
 
-        e.addEventListener('click', function () {
-            tools__list__el[0].classList.remove('tools__list_selected')
-            tools__list__el[1].classList.remove('tools__list_selected')
-            tools__list__el[2].classList.remove('tools__list_selected')
-            e.classList.add('tools__list_selected')
-            tools__list__el[0].classList.remove('displayBlock')
-            tools__list__el[1].classList.remove('displayBlock')
-            tools__list__el[2].classList.remove('displayBlock')
-            e.classList.add('displayBlock')
-            // bool1 = true
+tools__list__el[0].addEventListener('click', function (e) {
+    if (!tools__list__el[0].classList.contains('tools__list_selected')) {
+        tools__list__el[0].classList.add('tools__list_selected')
+        tools__list__el[1].classList.remove('tools__list_selected')
+        tools__list__el[2].classList.remove('tools__list_selected')
+        tool__element_open[0].classList.add('tool__element_open-active')
+        tool__element_open[1].classList.remove('tool__element_open-active')
+        tool__element_open[2].classList.remove('tool__element_open-active')
+    }
+})
+
+tools__list__el[2].addEventListener('click', function (e) {
+    if (!tools__list__el[2].classList.contains('tools__list_selected')) {
+        tools__list__el[2].classList.add('tools__list_selected')
+        tools__list__el[1].classList.remove('tools__list_selected')
+        tools__list__el[0].classList.remove('tools__list_selected')
+        tool__element_open[0].classList.remove('tool__element_open-active')
+        tool__element_open[1].classList.remove('tool__element_open-active')
+        tool__element_open[2].classList.add('tool__element_open-active')
+    }
+})
+
+const tools__list__el2=[...document.querySelectorAll('.tools__list__el')].slice(3)
+const tools__mother3 = document.querySelector('.tools__mother3')
+
+tools__mother3.addEventListener('click', function () {
+    tools__list__el2[0].classList.toggle('displayBlock')
+    tools__list__el2[1].classList.toggle('displayBlock')
+    tools__list__el2[2].classList.toggle('displayBlock')
+})
 
 
-        })
+tools__list__el2[2].addEventListener('click', function (e) {
+    if (!tools__list__el2[2].classList.contains('tools__list_selected')) {
+        tools__list__el2[2].classList.add('tools__list_selected')
+        tools__list__el2[1].classList.remove('tools__list_selected')
+        tools__list__el2[0].classList.remove('tools__list_selected')
+        cases__element_main[0].classList.remove('cases__element_main-active')
+        cases__element_main[1].classList.remove('cases__element_main-active')
+        cases__element_main[2].classList.add('cases__element_main-active')
+    }
+})
+tools__list__el2[1].addEventListener('click', function (e) {
+    if (!tools__list__el2[1].classList.contains('tools__list_selected')) {
+        tools__list__el2[1].classList.add('tools__list_selected')
+        tools__list__el2[2].classList.remove('tools__list_selected')
+        tools__list__el2[0].classList.remove('tools__list_selected')
+        cases__element_main[0].classList.remove('cases__element_main-active')
+        cases__element_main[2].classList.remove('cases__element_main-active')
+        cases__element_main[1].classList.add('cases__element_main-active')
+    }
+})
+tools__list__el2[0].addEventListener('click', function (e) {
+    if (!tools__list__el2[0].classList.contains('tools__list_selected')) {
+        tools__list__el2[0].classList.add('tools__list_selected')
+        tools__list__el2[2].classList.remove('tools__list_selected')
+        tools__list__el2[1].classList.remove('tools__list_selected')
+        cases__element_main[1].classList.remove('cases__element_main-active')
+        cases__element_main[2].classList.remove('cases__element_main-active')
+        cases__element_main[0].classList.add('cases__element_main-active')
     }
 })

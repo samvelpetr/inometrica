@@ -656,6 +656,11 @@ h2 {
     padding-left: 50px;
 }
 
+.team__member img {
+    display: block;
+    margin: auto;
+}
+
 .cases__element_main-active {
     display: block;
 }
@@ -1384,7 +1389,7 @@ h2 {
 }
 
 .sticky__call svg:hover .sticky__bord {
-    stroke: #C91717;
+    stroke: white;
     transition: .3s;
 
 }
@@ -1416,14 +1421,30 @@ h2 {
     z-index: 100;
     position: absolute;
     top: 100px;
-    left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: #C91717;
+    border-radius: 100%;
+    left: 41px;
+    transition: .3s all;
 }
 
+.sticky__toopen:hover {
+    background: white;
+
+}
+.sticky__toopen:hover path {
+    fill: #C91717;
+    transition: .3s;
+}
 .sticky__call1 {
     cursor: pointer;
     position: absolute;
     top: 100px;
-    left: 45px;
+    left: 41px;
     transition: .4s all;
 }
 
@@ -1439,12 +1460,12 @@ h2 {
 }
 
 .sticky__toopen__main:hover .sticky__call1 {
-    left: -13px;
+    left: -17px;
     top: 68px;
 }
 
 .sticky__toopen__main:hover .sticky__call1_1 {
-    left: -13px;
+    left: -17px;
     top: 132px;
 }
 
@@ -2852,14 +2873,18 @@ option {
         font-size: 16px;
     }
 
-    .tools__list__el2 {
-        margin: 28px 0;
-    }
 
     .tools__list_selected {
         display: block;
         margin-bottom: 0;
+        margin-top: 0;
         color: #C91717;
+    }
+
+    .tools__list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
     }
 
     .arrowBot {
@@ -3205,7 +3230,7 @@ option {
     }
 
     #form2 {
-        margin: 50px 0;
+        margin: 30px 0 50px;
     }
 
     .form2__block1 h3 {
@@ -3307,47 +3332,104 @@ option {
     .burger__menu_main ul a {
         font-size: 16px;
     }
-    .burger_contact{
+
+    .burger_contact {
         margin-top: 266px;
     }
-    .burger_contact .header__call{
+
+    .burger_contact .header__call {
         font-size: 22px;
     }
-    .burger_contact .header__call img{
+
+    .burger_contact .header__call img {
         width: 24px;
     }
-    .burger_contact svg{
+
+    .burger_contact svg {
         width: 40px;
     }
+
     .acount_main {
         width: 375px;
         padding: 35px 30px 21px;
     }
-    .acount_main h3{
+
+    .acount_main h3 {
         font-size: 27px;
     }
-    .acount_main p{
+
+    .acount_main p {
         font-size: 18px;
     }
-    .acount_main input{
+
+    .acount_main input {
         width: 314px;
     }
+
     .acount_main button {
         width: 314px;
     }
-    .acount_main form{
+
+    .acount_main form {
         gap: 15px;
     }
-    .acount_main p{
+
+    .acount_main p {
         margin: 12px 0 29px;
     }
-    input{
+
+    input {
         font-size: 16px !important;
     }
-    .acount_main span{
+
+    .acount_main span {
         font-size: 10px;
     }
-    .inputCheck3{
+
+    .inputCheck3 {
         margin-top: 20px;
+    }
+
+    .cases__lastDivs {
+        margin-bottom: 0;
+    }
+
+    .ourAdventages_main2 {
+        margin-bottom: 13px;
+    }
+
+    .swiperBut2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiperBut2 img {
+        width: 10px;
+    }
+
+    .swiper3 .swiper-slide {
+        gap: 22px;
+    }
+
+    .confidation__main {
+        width: 375px;
+        padding: 23px 11px 29px 22px;
+        height: auto;
+    }
+
+    .confidation__main h3 {
+        font-size: 27px;
+        padding-bottom: 15px;
+    }
+
+    .confidation__text {
+        font-size: 14px;
+        font-family: Stem100;
+        font-weight: bold;
+        padding-right: 32px;
+    }
+
+    .cases__button_main {
+        display: none;
     }
 }
