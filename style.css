@@ -268,7 +268,7 @@ a {
 .swiperNavigation1 .swiper-button-prev {
     left: auto;
     top: -210px;
-
+    transform:  rotate(180deg);
     right: 35px;
 }
 
@@ -295,7 +295,6 @@ a {
     font-family: Girloy700;
     position: absolute;
     left: -50px;
-    display: none;
     top: 25px;
 }
 
@@ -1436,10 +1435,12 @@ h2 {
     background: white;
 
 }
+
 .sticky__toopen:hover path {
     fill: #C91717;
     transition: .3s;
 }
+
 .sticky__call1 {
     cursor: pointer;
     position: absolute;
@@ -2762,7 +2763,7 @@ option {
 
     .swiperNavigation1 .swiper-pagination {
         right: 0 !important;
-        bottom: 40px !important;
+        bottom: 25px !important;
     }
 
     .swiperNavigation1 .swiper-pagination-bullet {
@@ -2778,25 +2779,26 @@ option {
     .swiperNavigation1 .swiper-button-next {
         top: auto;
         bottom: 24px;
-        right: 30px !important;
+        width: 34px;
+        height: 25px;
+        z-index: 100000;
+        right: 10px !important;
         transform: rotate(-90deg);
     }
 
     .swiperNavigation1 .swiper-button-prev {
         top: auto;
         bottom: 24px;
-        left: 30px !important;
-        transform: rotate(-90deg);
+        left: 0px !important;
+        transform: rotate(90deg);
+        width: 34px;
+        height: 25px;
     }
 
     .swiper1 {
         height: 724px !important;
     }
-
-    .swiperNavigation1 .swiper-pagination-bullet-active p {
-        display: none !important;
-    }
-
+     
     .swiper__slideText3 .slider__icons {
         margin-top: 100px;
     }
@@ -3431,5 +3433,52 @@ option {
 
     .cases__button_main {
         display: none;
+    }
+
+    .slider__icons {
+        gap: 16px;
+    }
+
+    .slider__icons img {
+        width: 40px;
+    }
+
+    .swiper1 {
+        height: 672px !important;
+    }
+    .swiperNavigation1 .swiper-pagination-bullet p{
+        font-size: 20px;
+        top: -28px;
+        left: 13px;
+    }
+    .swiperNavigation1  img{
+        width: 23px;
+    }
+    .close svg{
+        width: 24px;
+        height: 24px;
+    }
+    #form__toRequest p{
+        padding-bottom: 25px;
+    }
+    .inputCheck{
+        margin-top: 23px;
+    }
+    .swiper3 .swiper-pagination{
+        left: 0;
+    }
+    .swiper3 .swiper-pagination-bullet{
+        width: 11px;
+        height: 11px;
+    }
+    .swiper3__text{
+        margin-top: 35px;
+    }
+
+    .form__toRequest__main button{
+        font-size: 20px;
+    }
+    .inputCheck span{
+        font-size: 12px;
     }
 }
