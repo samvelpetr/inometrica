@@ -435,7 +435,12 @@ h2 {
     margin-top: 40px;
     width: 574px;
 }
-
+header{
+    overflow-x: hidden;
+}
+#ourAdventages{
+    overflow-x: hidden;
+}
 .tools__main {
     display: flex;
     gap: 20px;
@@ -3562,4 +3567,5 @@ option {
         right: 0;
         top: -65px;
     }
+    
 }
