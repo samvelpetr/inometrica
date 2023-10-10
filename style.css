@@ -268,7 +268,7 @@ a {
 .swiperNavigation1 .swiper-button-prev {
     left: auto;
     top: -210px;
-    transform:  rotate(180deg);
+    transform: rotate(180deg);
     right: 35px;
 }
 
@@ -999,6 +999,8 @@ h2 {
     position: absolute;
     left: 0;
     transition: .5s;
+    border-radius: 100%;
+    height:  60px;
     top: 13px;
 }
 
@@ -1018,12 +1020,16 @@ h2 {
 .sticky__call3__open2 {
     position: absolute;
     left: 0;
+    border-radius: 100%;
     transition: .5s;
-
+    height: 60px;
     top: 13px;
 }
 
-
+.sticky__call3__open2:hover{
+    transition: .3s;
+    border: 1px solid #C91717;
+}
 
 .left1 {
     left: -137px;
@@ -1033,6 +1039,10 @@ h2 {
     left: -67px;
 }
 
+.sticky__call3__open1:hover {
+    transition: .3s;
+    border: 1px solid #C91717;
+}
 .sticky__call3__open1:hover .sticky__back {
     fill: white;
 }
@@ -1222,8 +1232,9 @@ h2 {
 }
 
 .swiper-button-next3 {
-    right: 0;
-    top: 57%;
+    right: -60px;
+    z-index: 1000;
+    top: 43%;
 }
 
 .swiper-button-next5 {
@@ -1237,8 +1248,10 @@ h2 {
 }
 
 .swiper-button-prev3 {
-    left: 0;
-    top: 57%;
+    left: -60px;
+    top: 43%;
+    z-index: 1000;
+
 }
 
 #form2 {
@@ -1365,9 +1378,11 @@ h2 {
     position: fixed;
     left: 6px;
     z-index: 10000;
-
+    height: 61px ;
     display: block;
     top: 50%;
+    border-radius: 100%;
+
     transform: translateY(-50%);
 }
 
@@ -1376,18 +1391,23 @@ h2 {
 
 }
 
-.sticky__call svg:hover .sticky__back {
+.sticky__call:hover .sticky__back {
     fill: white;
     transition: .3s;
 }
 
-.sticky__call svg:hover .sticky__front {
+.sticky__call:hover .sticky__front {
     fill: #C91717;
     transition: .3s;
 
 }
 
-.sticky__call svg:hover .sticky__bord {
+.sticky__call:hover {
+    border: 2px solid #C91717;
+    transition: .3s;
+}
+
+.sticky__call:hover .sticky__bord {
     stroke: white;
     transition: .3s;
 
@@ -1422,6 +1442,7 @@ h2 {
     top: 100px;
     display: flex;
     align-items: center;
+
     justify-content: center;
     width: 58px;
     height: 58px;
@@ -1433,6 +1454,7 @@ h2 {
 
 .sticky__toopen:hover {
     background: white;
+    border: 1px solid #C91717;
 
 }
 
@@ -1440,15 +1462,19 @@ h2 {
     fill: #C91717;
     transition: .3s;
 }
-
+/* toolsandReviews  cases aboutCompany */
 .sticky__call1 {
     cursor: pointer;
     position: absolute;
     top: 100px;
     left: 41px;
-    transition: .4s all;
+    height:60px;
+    transition: .3s all;
+    border-radius: 100%;
 }
-
+.sticky__call1:hover{
+    border: 1px solid #C91717;
+}
 .sticky__call1 svg:hover .sticky__back {
     fill: white;
     transition: .3s;
@@ -2008,6 +2034,9 @@ h2 {
 .burgerButton {
     display: none;
 }
+.swiper4__main{
+    position: relative;
+}
 
 @media screen and (max-width:1350px) {
     .container {
@@ -2267,8 +2296,14 @@ h2 {
     .cases__button {
         width: 225px;
         font-size: 20px;
+        padding: 0 18px;
     }
-
+    .swiper4 {
+        padding-right: px !important;
+    }
+    .swiper4 .swiper-slide{
+        height: auto;
+    }
     .cases_element>h3 {
         width: 635px;
         font-size: 30px;
@@ -2537,10 +2572,17 @@ h2 {
         font-size: 20px;
         gap: 13px;
     }
-
+    .swiper-button-next3 img{
+        width: 15px;
+    }
+    .swiper-button-prev3 img{
+        width: 15px;
+    }
     .swiper-button-next3 {
-        right: 19px;
-        top: 0;
+        right: 0;
+        top: -80px;
+        width: 51px;
+        height: 51px;
     }
 
     .swiper4 {
@@ -2548,9 +2590,11 @@ h2 {
     }
 
     .swiper-button-prev3 {
-        left: 528px;
-        top: 0;
-
+        left: auto;
+        right: 75px;
+        top: -80px;
+        width: 51px;
+        height: 51px;
     }
 
     .acount_main {
@@ -2704,6 +2748,15 @@ h2 {
         width: auto;
         padding-left: 0;
     }
+    .swiper2__element__2 {
+        margin-bottom: 0 !important;
+    }
+    .tool__element_open1 .tool__element_open__allow-element{
+        width: 296px;
+    }
+    .tool__element_open__allow-element{
+        width: 312px;
+    }
 }
 
 option {
@@ -2714,7 +2767,7 @@ option {
 
 @media screen and (max-width:730px) {
     .container {
-        max-width: 345px;
+        max-width: 338px;
     }
 
     .header__logo img {
@@ -2798,7 +2851,7 @@ option {
     .swiper1 {
         height: 724px !important;
     }
-     
+
     .swiper__slideText3 .slider__icons {
         margin-top: 100px;
     }
@@ -2830,15 +2883,18 @@ option {
     }
 
     .swiper2 {
-        padding-left: 5px !important;
+        /* padding-left: 5px !important; */
         margin-top: 31px;
     }
 
     .swiper2__element {
         height: 250px !important;
-        width: 335px;
+        width: 331px;
+        padding-right: 5px;
     }
-
+    .swiper2__elementHead{
+        width: auto;
+    }
     .swiper2__element h3 {
         width: 221px !important;
         font-size: 18px;
@@ -3158,13 +3214,21 @@ option {
         width: 40px;
         height: 40px;
     }
+    .swiper-button-prev5{
+        top: -12%;
+    }
+    .swiper-button-next5{
+        top: -12%;
+    }
 
     .swiper-button-next5,
     .swiper-button-next3 {
         width: 40px;
         height: 40px;
     }
-
+    #ourTeam h2{
+        margin-bottom: 30px;
+    }
     .swiper-button-next3 {
         right: 57px;
     }
@@ -3446,39 +3510,56 @@ option {
     .swiper1 {
         height: 672px !important;
     }
-    .swiperNavigation1 .swiper-pagination-bullet p{
+
+    .swiperNavigation1 .swiper-pagination-bullet p {
         font-size: 20px;
         top: -28px;
         left: 13px;
     }
-    .swiperNavigation1  img{
+
+    .swiperNavigation1 img {
         width: 23px;
     }
-    .close svg{
+
+    .close svg {
         width: 24px;
         height: 24px;
     }
-    #form__toRequest p{
+
+    #form__toRequest p {
         padding-bottom: 25px;
     }
-    .inputCheck{
+
+    .inputCheck {
         margin-top: 23px;
     }
-    .swiper3 .swiper-pagination{
+
+    .swiper3 .swiper-pagination {
         left: 0;
     }
-    .swiper3 .swiper-pagination-bullet{
+
+    .swiper3 .swiper-pagination-bullet {
         width: 11px;
         height: 11px;
     }
-    .swiper3__text{
+
+    .swiper3__text {
         margin-top: 35px;
     }
 
-    .form__toRequest__main button{
+    .form__toRequest__main button {
         font-size: 20px;
     }
-    .inputCheck span{
+
+    .inputCheck span {
         font-size: 12px;
+    }
+    .swiper-button-prev3{
+        left: auto;
+        top: -65px;
+    }
+    .swiper-button-next3{
+        right: 0;
+        top: -65px;
     }
 }

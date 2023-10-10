@@ -8,7 +8,7 @@ const swiper1 = new Swiper('.swiper1', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-
+        clickable:true,
         renderBullet: function (index, className) {
             return `<span class = "` + className + `">` + `<p>` + `0` + (index + 1) + `</p>` + `</span>`
         }
@@ -25,7 +25,7 @@ const swiper1 = new Swiper('.swiper1', {
 
 const swiper2 = new Swiper('.swiper2', {
     slidesPerView: 1,
-
+    centeredSlides: true,
     navigation: {
         nextEl: '.swiper-button-next1',
         prevEl: '.swiper-button-prev1',
@@ -34,7 +34,9 @@ const swiper2 = new Swiper('.swiper2', {
 
     breakpoints: {
         730: {
-            slidesPerView: 2,
+            slidesPerView: 2.02,
+            spaceBetween: 13,
+            centeredSlidesBounds: true
 
         },
         1350: {
@@ -99,16 +101,17 @@ const swiper4 = new Swiper('.swiper4', {
     },
     spaceBetween: 18,
     loop: true,
-
+    
+    autoHeight: true,
     breakpoints: {
         730: {
             slidesPerView: 2,
+            spaceBetween: 13,
 
         },
         1350: {
             slidesPerView: 3,
             spaceBetween: 24,
-
         }
     }
 })
@@ -120,7 +123,7 @@ const swiper5 = new Swiper('.swiper5', {
         prevEl: '.swiper-button-prev5',
     },
     loop: true,
-
+    spaceBetween:14,
     breakpoints: {
         730: {
             slidesPerView: 3,
@@ -280,7 +283,7 @@ tools__list__el[2].addEventListener('click', function (e) {
     }
 })
 
-const tools__list__el2=[...document.querySelectorAll('.tools__list__el')].slice(3)
+const tools__list__el2 = [...document.querySelectorAll('.tools__list__el')].slice(3)
 const tools__mother3 = document.querySelector('.tools__mother3')
 
 tools__mother3.addEventListener('click', function () {
