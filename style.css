@@ -111,6 +111,7 @@ a {
     width: 417px;
     background: white;
     top: 0;
+    display: none;
     right: -200%;
     transition: .5s all;
     height: 100vh;
@@ -119,8 +120,8 @@ a {
 }
 
 .right0 {
-    visibility: inherit;
     right: 0;
+    display: block;
 }
 
 .close {
@@ -3384,7 +3385,6 @@ option {
     }
 
     .burger__menu {
-        visibility: hidden;
 
         width: 100%;
     }
