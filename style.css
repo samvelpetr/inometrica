@@ -112,13 +112,14 @@ a {
     background: white;
     top: 0;
     right: -200%;
-    transition: .5s;
+    transition: .5s all;
     height: 100vh;
     z-index: 100000;
     padding: 24px 30px 50px 43px;
 }
 
 .right0 {
+    visibility: inherit;
     right: 0;
 }
 
@@ -436,7 +437,7 @@ h2 {
     width: 574px;
 }
 header{
-    overflow-x: hidden;
+    overflow: hidden !important;
 }
 #ourAdventages{
     overflow-x: hidden;
@@ -3383,6 +3384,8 @@ option {
     }
 
     .burger__menu {
+        visibility: hidden;
+
         width: 100%;
     }
 
