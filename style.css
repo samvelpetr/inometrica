@@ -406,6 +406,7 @@ h2 {
 .swiper2 {
     margin-top: 108px;
     padding-bottom: 30px !important;
+    padding:5px 0 30px  5px !important;
 }
 
 .swiper2Main {
@@ -419,7 +420,7 @@ h2 {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     left: -60px;
     z-index: 1;
@@ -432,7 +433,9 @@ h2 {
     right: -60px;
     left: auto;
 }
-
+.swiper4{
+    padding: 0 7px !important;
+}
 .tools__mother {
     margin-top: 40px;
     width: 574px;
@@ -1711,7 +1714,9 @@ header{
     .container {
         max-width: 1340px;
     }
-
+    .swiper2__elementHead{
+        width: 430px;
+    }
     .header__main {
         padding: 17px 31px;
     }
@@ -2263,7 +2268,7 @@ header{
     }
 
     #form__toRequest .container {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 
     #form__toRequest h3 {
@@ -2304,9 +2309,6 @@ header{
         width: 225px;
         font-size: 20px;
         padding: 0 18px;
-    }
-    .swiper4 {
-        padding-right: px !important;
     }
     .swiper4 .swiper-slide{
         height: auto;
@@ -2593,9 +2595,17 @@ header{
     }
 
     .swiper4 {
-        padding: 0 5px;
+        padding: 0 6px 0 1px !important;
     }
-
+    #reviews .container{
+        max-width: 715px;
+    }
+    #whatWeSolve .container{
+        max-width: 715px;
+    }
+    .swiper2 {
+        padding: 5px 9px 30px 3px !important;
+    }
     .swiper-button-prev3 {
         left: auto;
         right: 75px;
@@ -2652,7 +2662,7 @@ header{
     }
 
     #form2 .container {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 
     .form2__main img {
@@ -2774,9 +2784,15 @@ option {
 
 @media screen and (max-width:730px) {
     .container {
-        max-width: 338px;
+        max-width: 338px !important;
     }
-
+    #whatWeSolve .container {
+        max-width: 342px !important;
+    }
+    .swiper2{
+        padding-left: 4px !important;
+        padding-right: 0 !important;
+    }
     .header__logo img {
         width: 79px;
     }
@@ -3281,7 +3297,7 @@ option {
     }
 
     .swiper4 {
-        padding: 0 4px !important;
+        padding: 0 8px !important;
     }
 
     .swiper4__head {
@@ -3307,9 +3323,12 @@ option {
     }
 
     .form2__block1 h3 {
+        text-align: center;
         font-size: 30px;
     }
-
+    #section1 .container{
+        max-width: 100% !important;
+    }
     .form2__block1 {
         padding-top: 45px;
     }
@@ -3466,6 +3485,7 @@ option {
 
     .cases__lastDivs {
         margin-bottom: 0;
+        width: 338px;
     }
 
     .ourAdventages_main2 {

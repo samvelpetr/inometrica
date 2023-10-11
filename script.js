@@ -34,13 +34,15 @@ const swiper2 = new Swiper('.swiper2', {
 
     breakpoints: {
         730: {
-            slidesPerView: 2.02,
+            slidesPerView: 2,
             spaceBetween: 13,
-            centeredSlidesBounds: true
+            centeredSlides: false
 
         },
         1350: {
             slidesPerView: 3,
+            spaceBetween: 13,
+
         }
     }
 
@@ -80,7 +82,7 @@ cases__button.forEach((e, i) => {
 
 const swiper3 = new Swiper('.swiper3', {
     slidesPerView: 1,
-
+    spaceBetween:13,
     navigation: {
         nextEl: '.swiper-button-next2',
         prevEl: '.swiper-button-prev2',
@@ -99,14 +101,14 @@ const swiper4 = new Swiper('.swiper4', {
         nextEl: '.swiper-button-next3',
         prevEl: '.swiper-button-prev3',
     },
-    spaceBetween: 18,
+    spaceBetween: 13,
     loop: true,
     
     autoHeight: true,
     breakpoints: {
         730: {
             slidesPerView: 2,
-            spaceBetween: 13,
+            spaceBetween: 16,
 
         },
         1350: {
