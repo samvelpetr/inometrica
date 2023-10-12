@@ -8,7 +8,7 @@ const swiper1 = new Swiper('.swiper1', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        clickable:true,
+        clickable: true,
         renderBullet: function (index, className) {
             return `<span class = "` + className + `">` + `<p>` + `0` + (index + 1) + `</p>` + `</span>`
         }
@@ -82,7 +82,7 @@ cases__button.forEach((e, i) => {
 
 const swiper3 = new Swiper('.swiper3', {
     slidesPerView: 1,
-    spaceBetween:13,
+    spaceBetween: 13,
     navigation: {
         nextEl: '.swiper-button-next2',
         prevEl: '.swiper-button-prev2',
@@ -103,7 +103,7 @@ const swiper4 = new Swiper('.swiper4', {
     },
     spaceBetween: 13,
     loop: true,
-    
+
     autoHeight: true,
     breakpoints: {
         730: {
@@ -125,7 +125,7 @@ const swiper5 = new Swiper('.swiper5', {
         prevEl: '.swiper-button-prev5',
     },
     loop: true,
-    spaceBetween:14,
+    spaceBetween: 14,
     breakpoints: {
         730: {
             slidesPerView: 3,
@@ -235,9 +235,11 @@ const burger__menu = document.querySelector('.burger__menu');
 
 burgerButton.addEventListener('click', function () {
     burger__menu.classList.add('right0')
+    document.body.classList.add('overflow')
 })
-const close = document.querySelector('.close')
+const close = document.querySelector('.close');
 close.addEventListener('click', function () {
+    document.body.classList.remove('overflow')
     burger__menu.classList.remove('right0')
 })
 
