@@ -406,7 +406,7 @@ h2 {
 .swiper2 {
     margin-top: 108px;
     padding-bottom: 30px !important;
-    padding:5px 0 30px  5px !important;
+    padding: 5px 0 30px 5px !important;
 }
 
 .swiper2Main {
@@ -433,19 +433,24 @@ h2 {
     right: -60px;
     left: auto;
 }
-.swiper4{
+
+.swiper4 {
     padding: 0 7px !important;
 }
+
 .tools__mother {
     margin-top: 40px;
     width: 574px;
 }
-header{
+
+header {
     overflow: hidden !important;
 }
-#ourAdventages{
+
+#ourAdventages {
     overflow-x: hidden;
 }
+
 .tools__main {
     display: flex;
     gap: 20px;
@@ -1010,7 +1015,7 @@ header{
     left: 0;
     transition: .5s;
     border-radius: 100%;
-    height:  60px;
+    height: 60px;
     top: 13px;
 }
 
@@ -1036,7 +1041,7 @@ header{
     top: 13px;
 }
 
-.sticky__call3__open2:hover{
+.sticky__call3__open2:hover {
     transition: .3s;
     border: 1px solid #C91717;
 }
@@ -1053,6 +1058,7 @@ header{
     transition: .3s;
     border: 1px solid #C91717;
 }
+
 .sticky__call3__open1:hover .sticky__back {
     fill: white;
 }
@@ -1150,6 +1156,10 @@ header{
     padding-top: 0;
 }
 
+.stagesOfWork__el_mother3 {
+    display: none;
+}
+
 .member_line {
     width: 94px;
     height: 6px;
@@ -1215,6 +1225,7 @@ header{
 .swiper4 .swiper-slide span {
     font-size: 18px;
     font-family: Stem100;
+    margin: 30px 0 50px;
     display: block;
 }
 
@@ -1388,7 +1399,7 @@ header{
     position: fixed;
     left: 6px;
     z-index: 10000;
-    height: 61px ;
+    height: 61px;
     display: block;
     top: 50%;
     border-radius: 100%;
@@ -1472,19 +1483,22 @@ header{
     fill: #C91717;
     transition: .3s;
 }
+
 /* toolsandReviews  cases aboutCompany */
 .sticky__call1 {
     cursor: pointer;
     position: absolute;
     top: 100px;
     left: 41px;
-    height:60px;
+    height: 60px;
     transition: .3s all;
     border-radius: 100%;
 }
-.sticky__call1:hover{
+
+.sticky__call1:hover {
     border: 1px solid #C91717;
 }
+
 .sticky__call1 svg:hover .sticky__back {
     fill: white;
     transition: .3s;
@@ -1710,13 +1724,19 @@ header{
     display: none;
 }
 
+.swiper__slideText3 .slider__icons {
+    margin-top: 235px;
+}
+
 @media screen and (max-width:1760px) {
     .container {
         max-width: 1340px;
     }
-    .swiper2__elementHead{
+
+    .swiper2__elementHead {
         width: 430px;
     }
+
     .header__main {
         padding: 17px 31px;
     }
@@ -1755,7 +1775,7 @@ header{
     }
 
     .swiper__slideText3 .slider__icons {
-        margin-top: 160px;
+        margin-top: 100px;
     }
 
     .whatWeSolve__text p {
@@ -2046,18 +2066,47 @@ header{
 .burgerButton {
     display: none;
 }
-.swiper4__main{
+
+.swiper4__main {
     position: relative;
 }
-
+.accoutn_close{
+    display: none;
+}
 @media screen and (max-width:1350px) {
     .container {
         max-width: 708px;
     }
-
+    .accoutn_close{
+        display: flex;justify-content: flex-end;
+        cursor: pointer;
+    }
     .burgerButton {
         display: block;
         cursor: pointer;
+    }
+    .client4 {
+        width: 10% !important;
+    }
+    .stagesOfWork__el_mother {
+        display: none;
+    }
+
+    .stagesOfWork__main {
+        gap: 20px;
+        flex-direction: column !important;
+    }
+
+    .stagesOfWork__el_mother3 {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: row !important;
+    }
+
+    .stagesOfWork-el2,
+    .stagesOfWork-el3 {
+        margin: 0 !important;
     }
 
     .header__main ul {
@@ -2310,9 +2359,11 @@ header{
         font-size: 20px;
         padding: 0 18px;
     }
-    .swiper4 .swiper-slide{
+
+    .swiper4 .swiper-slide {
         height: auto;
     }
+
     .cases_element>h3 {
         width: 635px;
         font-size: 30px;
@@ -2581,12 +2632,15 @@ header{
         font-size: 20px;
         gap: 13px;
     }
-    .swiper-button-next3 img{
+
+    .swiper-button-next3 img {
         width: 15px;
     }
-    .swiper-button-prev3 img{
+
+    .swiper-button-prev3 img {
         width: 15px;
     }
+
     .swiper-button-next3 {
         right: 0;
         top: -80px;
@@ -2597,15 +2651,19 @@ header{
     .swiper4 {
         padding: 0 6px 0 1px !important;
     }
-    #reviews .container{
+
+    #reviews .container {
         max-width: 715px;
     }
-    #whatWeSolve .container{
+
+    #whatWeSolve .container {
         max-width: 715px;
     }
+
     .swiper2 {
         padding: 5px 9px 30px 3px !important;
     }
+
     .swiper-button-prev3 {
         left: auto;
         right: 75px;
@@ -2765,13 +2823,16 @@ header{
         width: auto;
         padding-left: 0;
     }
+
     .swiper2__element__2 {
         margin-bottom: 0 !important;
     }
-    .tool__element_open1 .tool__element_open__allow-element{
+
+    .tool__element_open1 .tool__element_open__allow-element {
         width: 296px;
     }
-    .tool__element_open__allow-element{
+
+    .tool__element_open__allow-element {
         width: 312px;
     }
 }
@@ -2786,13 +2847,19 @@ option {
     .container {
         max-width: 338px !important;
     }
+
     #whatWeSolve .container {
-        max-width: 342px !important;
+        max-width: 350px !important;
     }
-    .swiper2{
-        padding-left: 4px !important;
+.stagesOfWork__el_mother3{
+    align-items: center;
+    flex-direction: column !important;
+}
+    .swiper2 {
+        padding-left: 0px !important;
         padding-right: 0 !important;
     }
+
     .header__logo img {
         width: 79px;
     }
@@ -2899,11 +2966,13 @@ option {
 
     .whatWeSolve__text p {
         font-size: 16px;
+        width: 319px;
     }
 
     .whatWeSolve__text {
         gap: 15px;
-    }
+    }   
+
 
     .swiper2 {
         /* padding-left: 5px !important; */
@@ -2915,9 +2984,11 @@ option {
         width: 331px;
         padding-right: 5px;
     }
-    .swiper2__elementHead{
+
+    .swiper2__elementHead {
         width: auto;
     }
+
     .swiper2__element h3 {
         width: 221px !important;
         font-size: 18px;
@@ -3162,7 +3233,7 @@ option {
     }
 
     .stagesOfWork-el h3 {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         font-size: 18px;
     }
 
@@ -3172,6 +3243,7 @@ option {
 
     .stagesOfWork-el {
         padding: 10px 10px 0 20px;
+        height: 154px;
     }
 
     #aboutCompany {
@@ -3196,9 +3268,17 @@ option {
     }
 
     .aboutCompany_number {
-        width: 100%;
+        width: 47%;
     }
-
+    .team__member h3{
+        font-size: 16px;
+    }
+    .team__member p{
+        font-size: 14px;
+    }
+    .team__member span{
+        font-size: 12px;
+    }
     .aboutCompany_numbers {
         width: 100%;
         margin-top: 30px;
@@ -3237,10 +3317,12 @@ option {
         width: 40px;
         height: 40px;
     }
-    .swiper-button-prev5{
+
+    .swiper-button-prev5 {
         top: -12%;
     }
-    .swiper-button-next5{
+
+    .swiper-button-next5 {
         top: -12%;
     }
 
@@ -3249,9 +3331,11 @@ option {
         width: 40px;
         height: 40px;
     }
-    #ourTeam h2{
+
+    #ourTeam h2 {
         margin-bottom: 30px;
     }
+
     .swiper-button-next3 {
         right: 57px;
     }
@@ -3297,7 +3381,7 @@ option {
     }
 
     .swiper4 {
-        padding: 0 8px !important;
+        padding: 0 7px 0 4px !important;
     }
 
     .swiper4__head {
@@ -3326,9 +3410,11 @@ option {
         text-align: center;
         font-size: 30px;
     }
-    #section1 .container{
+
+    #section1 .container {
         max-width: 100% !important;
     }
+
     .form2__block1 {
         padding-top: 45px;
     }
@@ -3345,8 +3431,21 @@ option {
 
     .form2__block1 input {
         width: 314px;
+        padding: 20px 0 20px 25px;
     }
-
+    .form2__block1 form{
+        gap: 15px;
+    }
+    .tool__element_open__allow-element p{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .swiper2__elementHead{
+        align-items: center;
+    }
+    .tool__element_open__allow-element span{
+        font-size: 14px;
+    }
     .form2__block1 button {
         width: 314px;
         font-size: 20px;
@@ -3549,13 +3648,18 @@ option {
         width: 23px;
     }
 
+    .swiper4 .swiper-slide span {
+        margin-bottom: 30px;
+    }
+
     .close svg {
         width: 24px;
         height: 24px;
     }
 
     #form__toRequest p {
-        padding-bottom: 25px;
+        padding-bottom: 19px;
+        padding-top: 19px;
     }
 
     .inputCheck {
@@ -3582,13 +3686,18 @@ option {
     .inputCheck span {
         font-size: 12px;
     }
-    .swiper-button-prev3{
+
+    .swiper-button-prev3 {
         left: auto;
         top: -65px;
     }
-    .swiper-button-next3{
+
+    .swiper-button-next3 {
         right: 0;
         top: -65px;
     }
-    
+    .slider__icons div{
+        gap: 15px;
+        font-size: 17px;
+    }
 }

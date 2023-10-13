@@ -103,12 +103,13 @@ const swiper4 = new Swiper('.swiper4', {
     },
     spaceBetween: 13,
     loop: true,
-
+    centeredSlides:true,
     autoHeight: true,
     breakpoints: {
         730: {
             slidesPerView: 2,
             spaceBetween: 16,
+            centeredSlides:false
 
         },
         1350: {
@@ -158,7 +159,7 @@ inputCheck.forEach((e, i) => {
 })
 const account__mother = document.querySelector('.account__mother');
 const acount_OK = document.querySelector('.account_OK_mother')
-
+const accoutn_close=document.querySelector('.accoutn_close')
 const loginToCabinet = document.querySelectorAll('.loginToCabinet');
 
 loginToCabinet.forEach(e => {
@@ -173,7 +174,10 @@ account__mother.addEventListener('click', function (e) {
         document.body.classList.remove('overflow')
     }
 })
+accoutn_close.addEventListener('click',function(){
+    account__mother.classList.remove('displayFlex')
 
+})
 loginToCabinet[2].onclick = function () {
     document.body.classList.add('overflow')
     acount_OK.classList.add('displayFlex')
